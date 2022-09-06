@@ -11,16 +11,24 @@ authors:
     initials: JD
     orcid: XXXX-XXXX-XXXX-XXXX
     twitter: johndoe
-    email: john.doe@something.com
+    email: jiewenl2@illinois.edu
     affiliations:
       - Department of CEE, University of Illinois at Urbana&Champaign
     funders:
       - Grant XXXXXXXX
   - github: janeroe
-    name: Jane Roe
+    name: Rourou Ji
     initials: JR
     orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
+    email: rourouj2@illinois.edu
+    affiliations:
+      - Department of Something, University of Whatever
+      - Department of Whatever, University of Something
+  - github: janeroe
+    name: Bernardo Burbano
+    initials: JR
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: bjb7@illinois.edu
     affiliations:
       - Department of Something, University of Whatever
       - Department of Whatever, University of Something

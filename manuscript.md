@@ -7,8 +7,9 @@ keywords:
 lang: en-US
 date-meta: '2022-09-06'
 author-meta:
-- John Doe
-- Jane Roe
+- Jiewen Luo
+- Rourou Ji
+- Bernardo Burbano
 header-includes: |-
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -27,11 +28,15 @@ header-includes: |-
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="John Doe" />
+  <meta name="citation_author" content="Jiewen Luo" />
   <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <meta name="twitter:creator" content="@johndoe" />
-  <meta name="citation_author" content="Jane Roe" />
+  <meta name="citation_author" content="Rourou Ji" />
+  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author" content="Bernardo Burbano" />
   <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
   <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
@@ -41,9 +46,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f1766ac4975177f1fbae4884d10fd0de765b9552/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f1766ac4975177f1fbae4884d10fd0de765b9552/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f1766ac4975177f1fbae4884d10fd0de765b9552/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/216f95896ffbd5f7a8ade7d0f53bb7478fd0e502/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/216f95896ffbd5f7a8ade7d0f53bb7478fd0e502/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/216f95896ffbd5f7a8ade7d0f53bb7478fd0e502/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,9 +70,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f1766ac4975177f1fbae4884d10fd0de765b9552/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/216f95896ffbd5f7a8ade7d0f53bb7478fd0e502/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-hydrograds@f1766ac](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/f1766ac4975177f1fbae4884d10fd0de765b9552)
+from [uiceds/cee-492-term-project-fall-2022-hydrograds@216f958](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/216f95896ffbd5f7a8ade7d0f53bb7478fd0e502)
 on September 6, 2022.
 </em></small>
 
@@ -75,7 +80,7 @@ on September 6, 2022.
 
 
 
-+ **John Doe**<br>
++ **Jiewen Luo**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon}
@@ -87,7 +92,16 @@ on September 6, 2022.
      · Funded by Grant XXXXXXXX
   </small>
 
-+ **Jane Roe**<br>
++ **Rourou Ji**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [janeroe](https://github.com/janeroe)<br>
+  <small>
+     Department of Something, University of Whatever; Department of Whatever, University of Something
+  </small>
+
++ **Bernardo Burbano**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon}

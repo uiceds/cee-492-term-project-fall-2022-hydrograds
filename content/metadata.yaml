@@ -1,5 +1,5 @@
 ---
-title: "Manuscript Title"
+title: "CEE492_Fall2022_FinalPRoject"
 keywords:
   - markdown
   - publishing
@@ -7,7 +7,7 @@ keywords:
 lang: en-US
 authors:
   - github: johndoe
-    name: John Doe
+    name: Rourou, Bernardo, Jiewen
     initials: JD
     orcid: XXXX-XXXX-XXXX-XXXX
     twitter: johndoe
@@ -24,3 +24,5 @@ authors:
     affiliations:
       - Department of Something, University of Whatever
       - Department of Whatever, University of Something
+
+      git push

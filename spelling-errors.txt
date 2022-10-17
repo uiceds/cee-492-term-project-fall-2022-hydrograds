@@ -6,6 +6,7 @@ amet
 anim
 aute
 Banqiao
+BernieJBA
 Burbano
 Cailiao
 CEE
@@ -38,7 +39,7 @@ heatmap
 incididunt
 ipsum
 irure
-janeroe
+JadeJi
 Ji
 Jiewen
 johndoe
@@ -50,10 +51,12 @@ Linkou
 Longtan
 Lorem
 LSTM
+Luo
 magna
 mollit
 nisi
 NMHC
+Noomi
 nostrud
 NOx
 nulla

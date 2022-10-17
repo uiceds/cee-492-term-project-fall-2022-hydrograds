@@ -1,5 +1,5 @@
 ---
-title: Forecasting and time variability analysis of Ozone concentrations using nitrate oxide and meteorological variables as predictors
+title: Forecasting and time variability analysis of Ozone concentrations using nitrogen oxide and meteorological variables as predictors
 keywords:
 - markdown
 - publishing
@@ -7,7 +7,7 @@ keywords:
 lang: en-US
 date-meta: '2022-10-17'
 author-meta:
-- Rourou, Bernardo, Jiewen
+- Jiewen Luo
 - Rourou Ji
 - Bernardo Burbano
 header-includes: |-
@@ -16,10 +16,10 @@ header-includes: |-
   Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="Forecasting and time variability analysis of Ozone concentrations using nitrate oxide and meteorological variables as predictors" />
-  <meta name="citation_title" content="Forecasting and time variability analysis of Ozone concentrations using nitrate oxide and meteorological variables as predictors" />
-  <meta property="og:title" content="Forecasting and time variability analysis of Ozone concentrations using nitrate oxide and meteorological variables as predictors" />
-  <meta property="twitter:title" content="Forecasting and time variability analysis of Ozone concentrations using nitrate oxide and meteorological variables as predictors" />
+  <meta name="dc.title" content="Forecasting and time variability analysis of Ozone concentrations using nitrogen oxide and meteorological variables as predictors" />
+  <meta name="citation_title" content="Forecasting and time variability analysis of Ozone concentrations using nitrogen oxide and meteorological variables as predictors" />
+  <meta property="og:title" content="Forecasting and time variability analysis of Ozone concentrations using nitrogen oxide and meteorological variables as predictors" />
+  <meta property="twitter:title" content="Forecasting and time variability analysis of Ozone concentrations using nitrogen oxide and meteorological variables as predictors" />
   <meta name="dc.date" content="2022-10-17" />
   <meta name="citation_publication_date" content="2022-10-17" />
   <meta name="dc.language" content="en-US" />
@@ -28,7 +28,7 @@ header-includes: |-
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="Rourou, Bernardo, Jiewen" />
+  <meta name="citation_author" content="Jiewen Luo" />
   <meta name="citation_author_institution" content="Department of CEE, University of Illinois at Urbana&amp;Champaign" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <meta name="twitter:creator" content="@johndoe" />
@@ -46,9 +46,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/9640bf3c2cfad9c5259e0905574f53d79d146c97/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/9640bf3c2cfad9c5259e0905574f53d79d146c97/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/9640bf3c2cfad9c5259e0905574f53d79d146c97/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/d121efc572314bb26ac8d4ebd1158d344ac61632/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/d121efc572314bb26ac8d4ebd1158d344ac61632/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/d121efc572314bb26ac8d4ebd1158d344ac61632/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -70,9 +70,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/9640bf3c2cfad9c5259e0905574f53d79d146c97/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/d121efc572314bb26ac8d4ebd1158d344ac61632/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-hydrograds@9640bf3](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/9640bf3c2cfad9c5259e0905574f53d79d146c97)
+from [uiceds/cee-492-term-project-fall-2022-hydrograds@d121efc](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/d121efc572314bb26ac8d4ebd1158d344ac61632)
 on October 17, 2022.
 </em></small>
 
@@ -80,11 +80,11 @@ on October 17, 2022.
 
 
 
-+ **Rourou, Bernardo, Jiewen**<br>
++ **Jiewen Luo**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [johndoe](https://github.com/johndoe)
+    [Noomi-Luo](https://github.com/Noomi-Luo)
     · ![Twitter icon](images/twitter.svg){.inline_icon}
     [johndoe](https://twitter.com/johndoe)<br>
   <small>
@@ -96,7 +96,7 @@ on October 17, 2022.
     ![ORCID icon](images/orcid.svg){.inline_icon}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [janeroe](https://github.com/janeroe)<br>
+    [JadeJi](https://github.com/JadeJi)<br>
   <small>
      Department of Something, University of Whatever; Department of Whatever, University of Something
   </small>
@@ -105,7 +105,7 @@ on October 17, 2022.
     ![ORCID icon](images/orcid.svg){.inline_icon}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [janeroe](https://github.com/janeroe)<br>
+    [BernieJBA](https://github.com/BernieJBA)<br>
   <small>
      Department of Something, University of Whatever; Department of Whatever, University of Something
   </small>
@@ -119,7 +119,7 @@ The dataset used in this project is a CSV file about the air quality in northern
 
 1. Time - The first column is the observation time of 2015
 
-2. Station - The second column is the station name, there are 25 observation stations [Banqiao, Cailiao, Datong, Dayuan, Guanyin, Guting, Keelung, Linkou, Longtan, Pingzhen, Sanchong, Shilin, Songshan, Tamsui, Taoyuan, Tucheng, Wanhua, Wanli, Xindian, Xinzhuang, Xizhi, Yangming, Yonghe, Zhongli, Zhongshan].
+2. Station - The second column is the station name, there are 25 observation stations, those stations are showing at the table below.
 
 
 |  |  | station |  |  |
@@ -130,7 +130,7 @@ The dataset used in this project is a CSV file about the air quality in northern
 | Wanhua | Wanli | Xindian | Xinzhuang | Xizhi |
 | Yangming | Yonghe | Zhongli | Zhongshan | Linkou |
 
-Table: A table contain all stations in Taiwan.
+Table: A table contain all stations in Taiwan.{#tbl:stations}
 
 3. Items - From the third column to the last one
 

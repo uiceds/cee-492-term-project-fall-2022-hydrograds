@@ -46,9 +46,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/b6381a8a197288c84599dd30f6fb0ca183fe440d/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/b6381a8a197288c84599dd30f6fb0ca183fe440d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/b6381a8a197288c84599dd30f6fb0ca183fe440d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/9640bf3c2cfad9c5259e0905574f53d79d146c97/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/9640bf3c2cfad9c5259e0905574f53d79d146c97/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/9640bf3c2cfad9c5259e0905574f53d79d146c97/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -70,9 +70,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/b6381a8a197288c84599dd30f6fb0ca183fe440d/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/9640bf3c2cfad9c5259e0905574f53d79d146c97/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-hydrograds@b6381a8](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/b6381a8a197288c84599dd30f6fb0ca183fe440d)
+from [uiceds/cee-492-term-project-fall-2022-hydrograds@9640bf3](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/9640bf3c2cfad9c5259e0905574f53d79d146c97)
 on October 17, 2022.
 </em></small>
 
@@ -121,10 +121,11 @@ The dataset used in this project is a CSV file about the air quality in northern
 
 2. Station - The second column is the station name, there are 25 observation stations [Banqiao, Cailiao, Datong, Dayuan, Guanyin, Guting, Keelung, Linkou, Longtan, Pingzhen, Sanchong, Shilin, Songshan, Tamsui, Taoyuan, Tucheng, Wanhua, Wanli, Xindian, Xinzhuang, Xizhi, Yangming, Yonghe, Zhongli, Zhongshan].
 
-| *Station* |          |        |        |         |
-|-----------------|-------------|-------------|-------------|-------------|
+
+|  |  | station |  |  |
+|:---:|:---:|:---:|:---:|:---:|
 | Banqiao | Cailiao | Datong | Dayuan | Guanyin |
-| Guting |  Keelung | Longtan | Pingzhen | Sanchong |
+| Guting | Keelung | Longtan | Pingzhen | Sanchong |
 | Shilin | Songshan | Tamsui | Taoyuan | Tucheng |
 | Wanhua | Wanli | Xindian | Xinzhuang | Xizhi |
 | Yangming | Yonghe | Zhongli | Zhongshan | Linkou |

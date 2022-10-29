@@ -1,35 +1,28 @@
 ---
-title: "Forecasting and time variability analysis of Ozone concentrations using nitrate oxide and meteorological variables as predictors"
+title: "Forecasting and time variability analysis of Ozone concentrations using nitrogen oxide and meteorological variables as predictors"
 keywords:
   - markdown
   - publishing
   - manubot
 lang: en-US
 authors:
-  - github: johndoe
-    name: Rourou, Bernardo, Jiewen
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
+  - github: Noomi-Luo
+    name:  Jiewen Luo
+    initials: JL
     email: jiewenl2@illinois.edu
     affiliations:
       - Department of CEE, University of Illinois at Urbana&Champaign
-    funders:
-      - Grant XXXXXXXX
-  - github: janeroe
+    
+  - github: JadeJi
     name: Rourou Ji
     initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
     email: rourouj2@illinois.edu
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
-  - github: janeroe
+      - Department of CEE, University of Illinois at Urbana&Champaign
+
+  - github: BernieJBA
     name: Bernardo Burbano
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
+    initials: BB
     email: bjb7@illinois.edu
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
-    topic: LLLL 
+      - Department of CEE, University of Illinois at Urbana&Champaign

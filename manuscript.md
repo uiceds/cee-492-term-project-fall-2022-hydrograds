@@ -40,9 +40,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f4c663e15d0aa078e24024437299646e282048cf/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f4c663e15d0aa078e24024437299646e282048cf/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f4c663e15d0aa078e24024437299646e282048cf/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/62a6e42ce2174f71cca3da41a54dd03aff5cc8ad/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/62a6e42ce2174f71cca3da41a54dd03aff5cc8ad/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/62a6e42ce2174f71cca3da41a54dd03aff5cc8ad/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -64,9 +64,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f4c663e15d0aa078e24024437299646e282048cf/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/62a6e42ce2174f71cca3da41a54dd03aff5cc8ad/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-hydrograds@f4c663e](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/f4c663e15d0aa078e24024437299646e282048cf)
+from [uiceds/cee-492-term-project-fall-2022-hydrograds@62a6e42](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/62a6e42ce2174f71cca3da41a54dd03aff5cc8ad)
 on October 29, 2022.
 </em></small>
 
@@ -115,7 +115,8 @@ The dataset used in this project is a `CSV` file about the air quality in northe
 | Wanhua | Wanli | Xindian | Xinzhuang | Xizhi |
 | Yangming | Yonghe | Zhongli | Zhongshan | Linkou |
 
-Table: A table contain all stations in Taiwan.{#tbl:1}
+Table: A table contain all stations in Taiwan.
+{#tbl:1}
 
 3. Items - From the third column to the last one
 
@@ -147,7 +148,7 @@ The purpose of this project is to predict O~3~ concentrations using measurements
 
 After the air quality data has been processed the strongest O~3~ predictors will be determined using PCA. PCA could be used to identify the main axes of variance within the dataset and explore underlying correlations that exist in a set of variables. Variables that are highly correlated cluster together. Using PCA 2D figures per each pair of variables are not needed, instead all the variables could be visualized simultaneously. Differences on PC1 are more important than differences on PC2. After plotting PCA plots, a heatmap could also be plotted to check the results. As additional criteria to identify the strongest predictors a LSTM network (long short-term memory network) can be used since the data used is time dependent. The network should contain several LSTM layers and fully-connected layers. The output should contain the pollution concentration and will point out the weights assigned to each correlated criterion, the values of such weights should also indicate what the strongest predictors are. Once the strongest predictors have been identified, genetic programming will be used to develop the models to predict O~3~ concentrations. 
 
-
+## Exploratory Data Analysis:
 
 
 

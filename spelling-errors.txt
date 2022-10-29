@@ -6,6 +6,7 @@ amet
 anim
 aute
 Banqiao
+Banquiao
 BernieJBA
 Burbano
 Cailiao
@@ -24,6 +25,7 @@ Datong
 Dayuan
 deserunt
 DIREC
+discernable
 dolore
 Duis
 eiusmod
@@ -35,7 +37,6 @@ exercitation
 fugiat
 Guanyin
 Guting
-heatmap
 incididunt
 ipsum
 irure
@@ -49,7 +50,6 @@ laborum
 Linkou
 Longtan
 Lorem
-LSTM
 Luo
 magna
 mollit
@@ -62,7 +62,6 @@ occaecat
 officia
 Pandoc’s
 pariatur
-PCA
 Pingzhen
 proident
 qui

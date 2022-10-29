@@ -132,9 +132,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/e3104b522d1147dc15a9bc7b5f0bf17e14da8fcc/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/e3104b522d1147dc15a9bc7b5f0bf17e14da8fcc/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/e3104b522d1147dc15a9bc7b5f0bf17e14da8fcc/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/fbc88dc2cea6d724de7dfbd4de62a715640ac53f/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/fbc88dc2cea6d724de7dfbd4de62a715640ac53f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/fbc88dc2cea6d724de7dfbd4de62a715640ac53f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -155,9 +155,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/e3104b522d1147dc15a9bc7b5f0bf17e14da8fcc/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/fbc88dc2cea6d724de7dfbd4de62a715640ac53f/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/e3104b522d1147dc15a9bc7b5f0bf17e14da8fcc">uiceds/cee-492-term-project-fall-2022-hydrograds@e3104b5</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/fbc88dc2cea6d724de7dfbd4de62a715640ac53f">uiceds/cee-492-term-project-fall-2022-hydrograds@fbc88dc</a>
 on October 29, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -271,8 +271,21 @@ Department of CEE, University of Illinois at Urbana&amp;Champaign
 </ul>
 <h2 id="proposal">Proposal:</h2>
 <p>The purpose of this project is to predict O<sub>3</sub> concentrations using measurements of concentration of other pollutants and available meteorological measurements. Ozone might be formed when heat and sunlight cause chemical reactions between oxides of nitrogen (NO<sub>x</sub>) and Volatile Organic Compounds (VOC), which are also known as Hydrocarbons. Therefore it could be hypothesized that using measurements of NO<sub>x</sub> as an independent variable a model could be developed to predict O<sub>3</sub> concentrations. Additionally, meteorological variables such as air temperature, relative humidity(RH) and ultraviolet index (UVB - UVI) could be included as independent variables to assess their influence on temporal variability of ozone. As an additional step wind-related variables such as mean wind velocity and direction will be included to study their effect on temporal variability of ozone.</p>
-<p>After the air quality data has been processed the strongest O<sub>3</sub> predictors will be determined using PCA. PCA could be used to identify the main axes of variance within the dataset and explore underlying correlations that exist in a set of variables. Variables that are highly correlated cluster together. Using PCA 2D figures per each pair of variables are not needed, instead all the variables could be visualized simultaneously. Differences on PC1 are more important than differences on PC2. After plotting PCA plots, a heatmap could also be plotted to check the results. As additional criteria to identify the strongest predictors a LSTM network (long short-term memory network) can be used since the data used is time dependent. The network should contain several LSTM layers and fully-connected layers. The output should contain the pollution concentration and will point out the weights assigned to each correlated criterion, the values of such weights should also indicate what the strongest predictors are. Once the strongest predictors have been identified, genetic programming will be used to develop the models to predict O<sub>3</sub> concentrations.</p>
-<h2 id="exploratory-data-analysis">Exploratory Data Analysis:</h2>
+<h2 id="exploratory-data-analysis">Exploratory Data Analysis</h2>
+<h2 id="predictive-modeling">Predictive Modeling</h2>
+<p>Predictive modeling
+The independent variables were segmented in pollutants and meteorological measurements. In order to visualize how the measurements change throughout the year the values were average per month. Then the resulting values were standardized using their mean. Once the values were standardized they were plotted against time.</p>
+<p>Figure…:Standardized pollutants and ozone monthly concentration changes</p>
+<p>Figure…:Standardized meteorological measurements and standardized ozone monthly concentration changes</p>
+<p>As seen in the previous figure, O3 peaked in the months when concentration of the nitrogen based pollutants and non-methane hydrocarbons dropped. This is especially the case for NO concentrations (green line). This pattern of corresponding decreasing pollutant concentrations and increasing ozone could suggest that the pollutant concentrations are negatively correlated with ozone concentrations. This is also consistent with figure … (correlation plot)</p>
+<p>In regards to the meteorological variables, UVB (ultraviolet index) and air temperature peak in the same months. Both temperature and UVB experience and increase in their values from the beginning of the year peaking in June. After June, both values experience a steady decrease. No discernable pattern can be observed in terms of the relation of the latter two variables and ozone concentrations.</p>
+<p>Wind direction values are telling of changes in direction with respect to yearly average direction. The increase or decrease of the values shown in figure… correspond to a relative shift in direction of the wind compared to the yearly wind direction. These shifts in the direction of the wind can be used later on the forecasting of O3 concentration. Wind direction could help elucidate if O3 concentration from upwind neighboring locations could affect O3 values in the location of interest, Banquiao.
+Predictive modeling</p>
+<p>The exploratory data analysis suggests that in order to forecast ozone concentration the model inputs i.e. independent variables will have to be averaged over the month. Furthermore, such monthly mean values will have to be standardized using the mean annual corresponding values. Once the data has been standardized it will be used to train a model.</p>
+<p>As a first iteration, a linear model with multiple independent variables will be optimized using available standardized measurements of ozone. A first model will be produced only using standardized pollutant values, and a second model will include as additional variables wind direction and upwind station standardized ozone concentrations from corresponding upwind stations.</p>
+<p>If the linear model mean square error, computed using predictions of ozone and observation, is below 0.5 a more involved model will be used. Two candidates for the second iteration of the predictive model will be considered. A fully connected neural network and a model produced with genetic programming packages in python for model discovery.</p>
+<p>In order to train the neural network pollutant measurements as well as from 9 out of the 12 months will be used as well as the corresponding mean wind direction values of Banquiao coupled with the ozone measurements from the 6 neighboring stations shown below. In order to validate the model, 12 the remaining data will be used.</p>
+<h2 id="exploratory-data-analysis-1">Exploratory Data Analysis:</h2>
 <p>This manuscript is a template (aka “rootstock”) for <a href="https://manubot.org/" title="Manubot">Manubot</a>, a tool for writing scholarly manuscripts.
 Use this template as a starting point for your manuscript.</p>
 <p>The rest of this document is a full list of formatting elements/features supported by Manubot.
@@ -482,7 +495,7 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
-<div id="tbl:25a2eadb-006a-4e16-9fcd-44a2aa87b952" class="tablenos">
+<div id="tbl:7258bec5-cc50-47f5-92d5-d0218916a0bd" class="tablenos">
 <table id="tbl:">
 <caption><span>Table 4:</span> A table with merged cells using the <code>attributes</code> plugin.
 </caption>

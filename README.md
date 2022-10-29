@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/gh-pages) branch hosts the contents of this directory at <https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/>.
-The permalink for this webpage version is <https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/e3104b522d1147dc15a9bc7b5f0bf17e14da8fcc/>.
+The permalink for this webpage version is <https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/fbc88dc2cea6d724de7dfbd4de62a715640ac53f/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`e3104b522d1147dc15a9bc7b5f0bf17e14da8fcc`](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/commit/e3104b522d1147dc15a9bc7b5f0bf17e14da8fcc).
+[`fbc88dc2cea6d724de7dfbd4de62a715640ac53f`](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/commit/fbc88dc2cea6d724de7dfbd4de62a715640ac53f).

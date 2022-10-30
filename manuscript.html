@@ -132,9 +132,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/09a89e190759292f8a15f878bf3d1ce6709aa322/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/09a89e190759292f8a15f878bf3d1ce6709aa322/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/09a89e190759292f8a15f878bf3d1ce6709aa322/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/0e14a1de19be9f1cbb2c6cbc3edbf5b2ae051cfa/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/0e14a1de19be9f1cbb2c6cbc3edbf5b2ae051cfa/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/0e14a1de19be9f1cbb2c6cbc3edbf5b2ae051cfa/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -155,9 +155,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/09a89e190759292f8a15f878bf3d1ce6709aa322/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/0e14a1de19be9f1cbb2c6cbc3edbf5b2ae051cfa/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/09a89e190759292f8a15f878bf3d1ce6709aa322">uiceds/cee-492-term-project-fall-2022-hydrograds@09a89e1</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/0e14a1de19be9f1cbb2c6cbc3edbf5b2ae051cfa">uiceds/cee-492-term-project-fall-2022-hydrograds@0e14a1d</a>
 on October 30, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -273,8 +273,20 @@ Department of CEE, University of Illinois at Urbana&amp;Champaign
 <p>The purpose of this project is to predict O<sub>3</sub> concentrations using measurements of concentration of other pollutants and available meteorological measurements. Ozone might be formed when heat and sunlight cause chemical reactions between oxides of nitrogen (NO<sub>x</sub>) and Volatile Organic Compounds (VOC), which are also known as Hydrocarbons. Therefore it could be hypothesized that using measurements of NO<sub>x</sub> as an independent variable a model could be developed to predict O<sub>3</sub> concentrations. Additionally, meteorological variables such as air temperature, relative humidity(RH) and ultraviolet index (UVB - UVI) could be included as independent variables to assess their influence on temporal variability of ozone. As an additional step wind-related variables such as mean wind velocity and direction will be included to study their effect on temporal variability of ozone.</p>
 <p>After the air quality data has been processed the strongest O<sub>3</sub> predictors will be determined using PCA. PCA could be used to identify the main axes of variance within the dataset and explore underlying correlations that exist in a set of variables. Variables that are highly correlated cluster together. Using PCA 2D figures per each pair of variables are not needed, instead all the variables could be visualized simultaneously. Differences on PC1 are more important than differences on PC2. After plotting PCA plots, a heatmap could also be plotted to check the results. As additional criteria to identify the strongest predictors a LSTM network (long short-term memory network) can be used since the data used is time dependent. The network should contain several LSTM layers and fully-connected layers. The output should contain the pollution concentration and will point out the weights assigned to each correlated criterion, the values of such weights should also indicate what the strongest predictors are. Once the strongest predictors have been identified, genetic programming will be used to develop the models to predict O<sub>3</sub> concentrations.</p>
 <h2 id="exploratory-data-analysis">Exploratory Data Analysis:</h2>
-<p><img src="https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/blob/main/content/heatmap.jpg" title="Square image" id="fig:heatmap" alt="Heatmap Loaded from the latest version of image on GitHub." />
-a</p>
+<div id="fig:heatmap" class="fignos">
+<figure>
+<img src="https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/blob/main/content/heatmap.jpg" alt="Figure 1: Heatmap Loaded from the latest version of image on GitHub." /><figcaption aria-hidden="true"><span>Figure 1:</span> <strong>Heatmap</strong>
+Loaded from the latest version of image on GitHub.</figcaption>
+</figure>
+</div>
+<p>The independent variables were segmented in pollutants and meteorological measurements. In order to visualize how the measurements change throughout the year the values were average per month. Then the resulting values were standardized using their mean. Once the values were standardized they were plotted against time.</p>
+<p>](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/blob/main/content/images/Pollutants.png “Standardized pollutants and ozone monthly concentration changes”){#fig:Pollutants}</p>
+<p>](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/blob/main/content/images/Meteo_Vars.png “Standardized meteorological measurements and standardized ozone monthly concentration changes”){#fig:MetereologicalVars}</p>
+<p>As seen in the previous figure, O3 peaked in the months when concentration of the nitrogen based pollutants and non-methane hydrocarbons dropped. This is especially the case for NO concentrations (green line). This pattern of corresponding decreasing pollutant concentrations and increasing ozone could suggest that the pollutant concentrations are negatively correlated with ozone concentrations. This is also consistent with figure … (correlation plot)
+In regards to the meteorological variables, UVB (ultraviolet index) and air temperature peak in the same months. Both temperature and UVB experience and increase in their values from the beginning of the year peaking in June. After June, both values experience a steady decrease. No discernable pattern can be observed in terms of the relation of the latter two variables and ozone concentrations.
+Wind direction values are telling of changes in direction with respect to yearly average direction. The increase or decrease of the values shown in figure… correspond to a relative shift in direction of the wind compared to the yearly wind direction. These shifts in the direction of the wind can be used later on the forecasting of O3 concentration. Wind direction could help elucidate if O3 concentration from upwind neighboring locations could affect O3 values in the location of interest, Banquiao.</p>
+<h2 id="predictive-modeling">Predictive Modeling</h2>
+<p>](https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/square.png “Square image”){#fig:square-image}</p>
 <p>This manuscript is a template (aka “rootstock”) for <a href="https://manubot.org/" title="Manubot">Manubot</a>, a tool for writing scholarly manuscripts.
 Use this template as a starting point for your manuscript.</p>
 <p>The rest of this document is a full list of formatting elements/features supported by Manubot.
@@ -352,10 +364,10 @@ two spaces at end of line.</p>
 Manubot plugins provide easier, more convenient visualization of and navigation between citations <span class="citation" data-cites="YuJbg3zO 126Wi5Us4 mSMVRkoc PZMP42Ak">[<a href="#ref-mSMVRkoc" role="doc-biblioref">2</a>,<a href="#ref-126Wi5Us4" role="doc-biblioref">3</a>,<a href="#ref-PZMP42Ak" role="doc-biblioref">7</a>,<a href="#ref-YuJbg3zO" role="doc-biblioref">8</a>]</span>.</p>
 <p>Citation tags (i.e. aliases) can be defined in their own paragraphs using Markdown’s reference link syntax:</p>
 <h2 id="referencing-figures-tables-equations">Referencing figures, tables, equations</h2>
-<p>Figure <a href="#fig:square-image">1</a></p>
-<p>Figure <a href="#fig:wide-image">2</a></p>
-<p>Figure <a href="#fig:tall-image">3</a></p>
-<p>Figure <a href="#fig:vector-image">4</a></p>
+<p>Figure <a href="#fig:square-image">2</a></p>
+<p>Figure <a href="#fig:wide-image">3</a></p>
+<p>Figure <a href="#fig:tall-image">4</a></p>
+<p>Figure <a href="#fig:vector-image">5</a></p>
 <p>Table <a href="#tbl:bowling-scores">2</a></p>
 <p>Equation <a href="#eq:regular-equation">1</a></p>
 <p>Equation <a href="#eq:long-equation">2</a></p>
@@ -384,25 +396,25 @@ Exporting PDF manuscript</code></pre>
 <h2 id="figures">Figures</h2>
 <div id="fig:square-image" class="fignos">
 <figure>
-<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/square.png" alt="Figure 1: A square image at actual size and with a bottom caption. Loaded from the latest version of image on GitHub." /><figcaption aria-hidden="true"><span>Figure 1:</span> <strong>A square image at actual size and with a bottom caption.</strong>
+<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/square.png" alt="Figure 2: A square image at actual size and with a bottom caption. Loaded from the latest version of image on GitHub." /><figcaption aria-hidden="true"><span>Figure 2:</span> <strong>A square image at actual size and with a bottom caption.</strong>
 Loaded from the latest version of image on GitHub.</figcaption>
 </figure>
 </div>
 <div id="fig:wide-image" class="fignos">
 <figure>
-<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/wide.png" alt="Figure 2: An image too wide to fit within page at full size. Loaded from a specific (hashed) version of the image on GitHub." /><figcaption aria-hidden="true"><span>Figure 2:</span> <strong>An image too wide to fit within page at full size.</strong>
+<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/wide.png" alt="Figure 3: An image too wide to fit within page at full size. Loaded from a specific (hashed) version of the image on GitHub." /><figcaption aria-hidden="true"><span>Figure 3:</span> <strong>An image too wide to fit within page at full size.</strong>
 Loaded from a specific (hashed) version of the image on GitHub.</figcaption>
 </figure>
 </div>
 <div id="fig:tall-image" class="fignos">
 <figure>
-<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/tall.png" style="height:3in" alt="Figure 3: A tall image with a specified height. Loaded from a specific (hashed) version of the image on GitHub." /><figcaption aria-hidden="true"><span>Figure 3:</span> <strong>A tall image with a specified height.</strong>
+<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/tall.png" style="height:3in" alt="Figure 4: A tall image with a specified height. Loaded from a specific (hashed) version of the image on GitHub." /><figcaption aria-hidden="true"><span>Figure 4:</span> <strong>A tall image with a specified height.</strong>
 Loaded from a specific (hashed) version of the image on GitHub.</figcaption>
 </figure>
 </div>
 <div id="fig:vector-image" class="fignos">
 <figure>
-<img src="https://raw.githubusercontent.com/manubot/resources/main/test/vector.svg?sanitize=true" class="white" style="height:2.5in" alt="Figure 4: A vector .svg image loaded from GitHub. The parameter sanitize=true is necessary to properly load SVGs hosted via GitHub URLs. White background specified to serve as a backdrop for transparent sections of the image." /><figcaption aria-hidden="true"><span>Figure 4:</span> <strong>A vector <code>.svg</code> image loaded from GitHub.</strong>
+<img src="https://raw.githubusercontent.com/manubot/resources/main/test/vector.svg?sanitize=true" class="white" style="height:2.5in" alt="Figure 5: A vector .svg image loaded from GitHub. The parameter sanitize=true is necessary to properly load SVGs hosted via GitHub URLs. White background specified to serve as a backdrop for transparent sections of the image." /><figcaption aria-hidden="true"><span>Figure 5:</span> <strong>A vector <code>.svg</code> image loaded from GitHub.</strong>
 The parameter <code>sanitize=true</code> is necessary to properly load SVGs hosted via GitHub URLs.
 White background specified to serve as a backdrop for transparent sections of the image.</figcaption>
 </figure>
@@ -484,7 +496,7 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
-<div id="tbl:20434030-6304-4a53-8817-2e6bcf3e7547" class="tablenos">
+<div id="tbl:d6fc8323-7457-478b-8549-4fe5ab189214" class="tablenos">
 <table id="tbl:">
 <caption><span>Table 4:</span> A table with merged cells using the <code>attributes</code> plugin.
 </caption>

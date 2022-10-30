@@ -6,6 +6,7 @@ amet
 anim
 aute
 Banqiao
+Banquiao
 BernieJBA
 Burbano
 Cailiao
@@ -19,11 +20,12 @@ consequat
 CSV
 culpa
 cupidatat
-Dataset
+dataset
 Datong
 Dayuan
 deserunt
 DIREC
+discernable
 dolore
 Duis
 eiusmod
@@ -52,6 +54,7 @@ Lorem
 LSTM
 Luo
 magna
+MetereologicalVars
 mollit
 nisi
 NMHC

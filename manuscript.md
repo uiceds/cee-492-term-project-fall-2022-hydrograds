@@ -40,9 +40,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/bea3e17a4ddc0d96a61a69fb63a664eb37100977/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/bea3e17a4ddc0d96a61a69fb63a664eb37100977/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/bea3e17a4ddc0d96a61a69fb63a664eb37100977/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/6042cc94a7880f39633dc5033e6a9becda28286f/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/6042cc94a7880f39633dc5033e6a9becda28286f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/6042cc94a7880f39633dc5033e6a9becda28286f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -64,9 +64,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/bea3e17a4ddc0d96a61a69fb63a664eb37100977/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/6042cc94a7880f39633dc5033e6a9becda28286f/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-hydrograds@bea3e17](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/bea3e17a4ddc0d96a61a69fb63a664eb37100977)
+from [uiceds/cee-492-term-project-fall-2022-hydrograds@6042cc9](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/6042cc94a7880f39633dc5033e6a9becda28286f)
 on October 30, 2022.
 </em></small>
 
@@ -174,19 +174,28 @@ After the air quality data has been processed the strongest O~3~ predictors will
 ![variables](images/InformationDensity.png){#fig:var}
 
 
-The independent variables were segmented in pollutants and meteorological measurements. In order to visualize how the measurements change throughout the year the values were average per month. Then the resulting values were standardized using their mean. Once the values were standardized they were plotted against time.
-
-![Standardized pollutants and ozone monthly concentration changes](images/Pollutants.png) ""){#fig:Pollutants}
-
-![Standardized meteorological measurements and standardized ozone monthly concentration changes](images/Meteo_Vars.png){#fig:MetereologicalVars}
-
-As seen in the previous figure, O3 peaked in the months when concentration of the nitrogen based pollutants and non-methane hydrocarbons dropped. This is especially the case for NO concentrations (green line). This pattern of corresponding decreasing pollutant concentrations and increasing ozone could suggest that the pollutant concentrations are negatively correlated with ozone concentrations. This is also consistent with figure … (correlation plot)
-In regards to the meteorological variables, UVB (ultraviolet index) and air temperature peak in the same months. Both temperature and UVB experience and increase in their values from the beginning of the year peaking in June. After June, both values experience a steady decrease. No discernable pattern can be observed in terms of the relation of the latter two variables and ozone concentrations. 
-Wind direction values are telling of changes in direction with respect to yearly average direction. The increase or decrease of the values shown in figure… correspond to a relative shift in direction of the wind compared to the yearly wind direction. These shifts in the direction of the wind can be used later on the forecasting of O3 concentration. Wind direction could help elucidate if O3 concentration from upwind neighboring locations could affect O3 values in the location of interest, Banquiao. 
 
 
 ## Predictive Modeling
+The independent variables were segmented in pollutants and meteorological measurements. In order to visualize how the measurements change throughout the year the values were average per month. Then the resulting values were standardized using their mean. Once the values were standardized they were plotted against time.
 
+![Standardized pollutants and ozone monthly concentration changes](images/Pollutants.png){#fig:Pollutants width=5in}
+
+![Standardized meteorological measurements and standardized ozone monthly concentration changes](images/Meteo_Vars.png){#fig:MetereologicalVars width=5in}
+
+As seen in the previous figure, O3 peaked in the months when concentration of the nitrogen based pollutants and non-methane hydrocarbons dropped. This is especially the case for NO concentrations (green line). This pattern of corresponding decreasing pollutant concentrations and increasing ozone could suggest that the pollutant concentrations are negatively correlated with ozone concentrations. This is also consistent with figure @fig:Pollutants (correlation plot)
+
+In regards to the meteorological variables, UVB (ultraviolet index) and air temperature peak in the same months. Both temperature and UVB experience and increase in their values from the beginning of the year peaking in June. After June, both values experience a steady decrease. No discernable pattern can be observed in terms of the relation of the latter two variables and ozone concentrations. 
+
+Wind direction values are telling of changes in direction with respect to yearly average direction. The increase or decrease of the values shown in figure @fig:MetereologicalVars correspond to a relative shift in direction of the wind compared to the yearly wind direction. These shifts in the direction of the wind can be used later on the forecasting of O3 concentration. Wind direction could help elucidate if O3 concentration from upwind neighboring locations could affect O3 values in the location of interest, Banquiao. 
+
+The exploratory data analysis suggests that in order to forecast ozone concentration the model inputs i.e. independent variables will have to be averaged over the month. Furthermore, such monthly mean values will have to be standardized using the mean annual corresponding values. Once the data has been standardized it will be used to train a model.
+
+As a first iteration, a linear model with multiple independent variables will be optimized using available standardized measurements of ozone. A first model will be produced only using standardized pollutant values, and a second model will include as additional variables wind direction and upwind station standardized ozone concentrations from corresponding upwind stations.
+If the linear model mean square error, computed using predictions of ozone and observation, is below 0.5 a more involved model will be used. Two candidates for the second iteration of the predictive model will be considered. A fully connected neural network and a model produced with genetic programming packages in python for model discovery. 
+In order to train the neural network pollutant measurements as well as  from 9 out of the 12 months will be used as well as the corresponding mean wind direction values of Banquiao coupled with the ozone measurements from the 6 neighboring stations shown below. In order to validate the model, 12 the remaining data will be used.
+
+![Geographic location of 7 stations we focused on](images/geogra.png){#fig:MetereologicalVars width=5in}
 
 
 This manuscript is a template (aka "rootstock") for [Manubot](https://manubot.org/ "Manubot"), a tool for writing scholarly manuscripts.

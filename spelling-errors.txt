@@ -20,7 +20,7 @@ consequat
 CSV
 culpa
 cupidatat
-dataset
+Dataset
 Datong
 Dayuan
 deserunt
@@ -37,7 +37,7 @@ exercitation
 fugiat
 Guanyin
 Guting
-heatmap
+Heatmap
 incididunt
 ipsum
 irure

@@ -1,5 +1,4 @@
 adipiscing
-ae
 aliqua
 aliquip
 AMB
@@ -11,9 +10,7 @@ Banquiao
 BernieJBA
 Burbano
 Cailiao
-cbb
 CEE
-cfa
 Champaign
 cillum
 commodo
@@ -31,7 +28,6 @@ DIREC
 discernable
 dolore
 Duis
-edbf
 eiusmod
 elit
 enim
@@ -41,7 +37,7 @@ exercitation
 fugiat
 Guanyin
 Guting
-heatmap
+Heatmap
 incididunt
 ipsum
 irure
@@ -64,6 +60,7 @@ nisi
 NMHC
 Noomi
 nostrud
+NOx
 nulla
 occaecat
 officia

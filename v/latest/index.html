@@ -69,9 +69,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/6d24888cebabac2245556be846bce012c809d14e/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/6d24888cebabac2245556be846bce012c809d14e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/6d24888cebabac2245556be846bce012c809d14e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/ff8442cabada1ec2ee4e6f276db6f48c03260a71/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/ff8442cabada1ec2ee4e6f276db6f48c03260a71/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/ff8442cabada1ec2ee4e6f276db6f48c03260a71/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -85,9 +85,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/6d24888cebabac2245556be846bce012c809d14e/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/ff8442cabada1ec2ee4e6f276db6f48c03260a71/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/6d24888cebabac2245556be846bce012c809d14e">uiceds/cee-492-term-project-fall-2022-hydrograds@6d24888</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/ff8442cabada1ec2ee4e6f276db6f48c03260a71">uiceds/cee-492-term-project-fall-2022-hydrograds@ff8442c</a>
 on October 30, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -209,13 +209,13 @@ Department of CEE, University of Illinois at Urbana&amp;Champaign
 <img src="images/heatmap.jpg" style="width:6in" alt="Figure 1: Heatmap for the variables we considered in this analysis" /><figcaption aria-hidden="true"><span>Figure 1:</span> Heatmap for the variables we considered in this analysis</figcaption>
 </figure>
 </div>
-<p>Furthermore, the fraction of available measurements, meaning the number of data points available divided by the number of hours in a year, was computed for all stations and all measured variables. This computation helped visualize the stations that missed the least data points as well as the variables whose values are recorded the most consistently through different stations. The station with the highest fraction of available measurements was Banquiao, as seen in the table ??. For this reason the remaining portion of this EDA was devoted to this station.</p>
+<p>Furthermore, the fraction of available measurements, meaning the number of data points available divided by the number of hours in a year, was computed for all stations and all measured variables. This computation helped visualize the stations that missed the least data points as well as the variables whose values are recorded the most consistently through different stations. The station with the highest fraction of available measurements was Banquiao, as seen in the Figure <a href="#fig:var">2</a>. For this reason the remaining portion of this EDA was devoted to this station.</p>
 <div id="fig:var" class="fignos">
 <figure>
 <img src="images/InformationDensity.png" style="width:6in" alt="Figure 2: Data availability of air quality stations" /><figcaption aria-hidden="true"><span>Figure 2:</span> Data availability of air quality stations</figcaption>
 </figure>
 </div>
-<p>Other relevant statistics from the Banquio air quality station are shown as Table <a href="#tbl:2">2</a></p>
+<p>Other relevant statistics from the Banquio air quality station are shown as Table <a href="#tbl:2">2</a>.</p>
 <div id="tbl:2" class="tablenos">
 <table id="tbl:2">
 <caption><span>Table 2:</span> Descriptive statistics of features that compose in Banqiao Station
@@ -369,12 +369,12 @@ Department of CEE, University of Illinois at Urbana&amp;Champaign
 </tbody>
 </table>
 </div>
+<p>As described in previous sections, the dataset consists of hourly observations of ozone (dependent variable) and several pollutant concentrations and meteorological measurements (independent variables). The first step was to plot ozone against all of the independent variables to visualize if the data collapsed into any identifiable pattern, thus to later on use such a pattern to identify potential models. The measurements in an hourly time scale did not show any discernible pattern between the dependent and independent variables. As seen in figure <a href="#fig:O31">3</a>.</p>
 <div id="fig:O31" class="fignos">
 <figure>
 <img src="images/O312.jpg" style="width:6in" alt="Figure 3: Scatter plots of hourly measurements of variables" /><figcaption aria-hidden="true"><span>Figure 3:</span> Scatter plots of hourly measurements of variables</figcaption>
 </figure>
 </div>
-<p>As described in previous sections, the dataset consists of hourly observations of ozone (dependent variable) and several pollutant concentrations and meteorological measurements (independent variables). The first step was to plot ozone against all of the independent variables to visualize if the data collapsed into any identifiable pattern, thus to later on use such a pattern to identify potential models. The measurements in an hourly time scale did not show any discernible pattern between the dependent and independent variables. As seen in figure <a href="#fig:O31">3</a>.</p>
 <p>Plotting the raw data, i.e. the available measurements without any processing or transformation, did not yield any insights that could help elucidate the relation between the variables. Therefore, the data was normalized. Notwithstanding, normalization did not translate into plots where patterns could be identified. Thus, the data was processed again following two consecutive steps. First the values were averaged over a day and over a month producing a dataset of daily and monthly measurement. Second, such values were standardized by dividing them by the corresponding daily and monthly averages.</p>
 <p>The resulting daily and monthly standardized averages were plotted against time. Plotting the daily averaged variables shown plots where the fluctuations of the values happened in a relatively short time and thus such fluctuations obscured any pattern that could be observed in the data, as seen in the next figure. Conversely, when the monthly standardized averages were plotted against time it was visible that the pollutants concentrations shown similar time patterns as seen in figures <a href="#fig:day">4</a>.</p>
 <div id="fig:day" class="fignos">
@@ -394,7 +394,7 @@ Department of CEE, University of Illinois at Urbana&amp;Champaign
 </div>
 <p>In regards to pollutant concentrations, O3 peaked in the months when concentration of the nitrogen based pollutants and non-methane hydrocarbons dropped. This is especially the case for NO concentrations (green line). This pattern of corresponding decreasing pollutant concentrations and increasing ozone could suggest that the pollutant concentrations are negatively correlated with ozone concentrations. This is also consistent with figure <a href="#fig:Pollutants">5</a> (correlation plot)</p>
 <p>In regards to the meteorological variables, UVB (ultraviolet index) and air temperature peak in the same months. Both temperature and UVB experience an increase in their values from the beginning of the year peaking in June. After June, both values experience a steady decrease. No matching pattern can be observed in terms of the relation of the latter two variables and ozone concentrations.</p>
-<p>The increase or decrease of the values of wind direction shown in figure… correspond to a relative shift in direction of the wind compared to the yearly wind direction. These shifts in the direction of the wind can be used later on the forecasting of O3 concentration. Wind direction could help elucidate if O3 concentration from upwind neighboring locations could affect O3 values in the location of interest, Banquiao.</p>
+<p>The increase or decrease of the values of wind direction shown in figure <a href="#fig:MetereologicalVars">7</a> correspond to a relative shift in direction of the wind compared to the yearly wind direction. These shifts in the direction of the wind can be used later on the forecasting of O3 concentration. Wind direction could help elucidate if O3 concentration from upwind neighboring locations could affect O3 values in the location of interest, Banquiao.</p>
 <h2 id="predictive-modeling">Predictive Modeling</h2>
 <p>As a first iteration, a linear model with multiple independent variables will be optimized using available standardized measurements of ozone. A first model will be produced only using standardized pollutant values, and a second model will include as additional variables wind direction and upwind station standardized ozone concentrations.</p>
 <div id="fig:MetereologicalVars" class="fignos">

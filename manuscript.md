@@ -40,9 +40,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/5755ede996bc3d10c27c331ab116bc7d34498dcf/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/5755ede996bc3d10c27c331ab116bc7d34498dcf/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/5755ede996bc3d10c27c331ab116bc7d34498dcf/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/3cbf634ffe3cb52a0fb5966dfb0d97a828e9768c/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/3cbf634ffe3cb52a0fb5966dfb0d97a828e9768c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/3cbf634ffe3cb52a0fb5966dfb0d97a828e9768c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -64,9 +64,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/5755ede996bc3d10c27c331ab116bc7d34498dcf/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/3cbf634ffe3cb52a0fb5966dfb0d97a828e9768c/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-hydrograds@5755ede](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/5755ede996bc3d10c27c331ab116bc7d34498dcf)
+from [uiceds/cee-492-term-project-fall-2022-hydrograds@3cbf634](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/3cbf634ffe3cb52a0fb5966dfb0d97a828e9768c)
 on October 30, 2022.
 </em></small>
 
@@ -149,11 +149,11 @@ The purpose of this project is to predict O~3~ concentrations using measurements
 After the air quality data has been processed the strongest O~3~ predictors will be determined using PCA. PCA could be used to identify the main axes of variance within the dataset and explore underlying correlations that exist in a set of variables. Variables that are highly correlated cluster together. Using PCA 2D figures per each pair of variables are not needed, instead all the variables could be visualized simultaneously. Differences on PC1 are more important than differences on PC2. After plotting PCA plots, a heatmap could also be plotted to check the results. As additional criteria to identify the strongest predictors a LSTM network (long short-term memory network) can be used since the data used is time dependent. The network should contain several LSTM layers and fully-connected layers. The output should contain the pollution concentration and will point out the weights assigned to each correlated criterion, the values of such weights should also indicate what the strongest predictors are. Once the strongest predictors have been identified, genetic programming will be used to develop the models to predict O~3~ concentrations. 
 
 ## Exploratory Data Analysis:
-![Heatmap](images/heatmap.jpg){#fig:heatmap width=7in}
-![Hour](images/hour.png){#fig:hour width=7in}
-![month](images/month.jpg){#fig:month width=7in}
-![O3 & Independent variable](images/O312.jpg){#fig:O3 width=7in}
-![variables](images/InformationDensity.png){#fig:var width=7in}
+![Heatmap](images/heatmap.jpg){#fig:heatmap width=6in}
+![Hour](images/hour.png){#fig:hour width=6in}
+![month](images/month.jpg){#fig:month width=6in}
+![O3 & Independent variable](images/O312.jpg){#fig:O3 width=6in}
+![variables](images/InformationDensity.png){#fig:var width=6in}
 
 
 |                      | **count** | **mean**  | **std** | **min** | **25%** | **50%** | **75%** | **max** |
@@ -182,9 +182,9 @@ Table:Descriptive statistics of features that compose in this analysis
 ## Predictive Modeling
 The independent variables were segmented in pollutants and meteorological measurements. In order to visualize how the measurements change throughout the year the values were average per month. Then the resulting values were standardized using their mean. Once the values were standardized they were plotted against time.
 
-![Standardized pollutants and ozone monthly concentration changes](images/Pollutants.png){#fig:Pollutants width=7in}
+![Standardized pollutants and ozone monthly concentration changes](images/Pollutants.png){#fig:Pollutants width=6in}
 
-![Standardized meteorological measurements and standardized ozone monthly concentration changes](images/Meteo_Vars.png){#fig:MetereologicalVars width=7in}
+![Standardized meteorological measurements and standardized ozone monthly concentration changes](images/Meteo_Vars.png){#fig:MetereologicalVars width=6in}
 
 As seen in the previous figure, O3 peaked in the months when concentration of the nitrogen based pollutants and non-methane hydrocarbons dropped. This is especially the case for NO concentrations (green line). This pattern of corresponding decreasing pollutant concentrations and increasing ozone could suggest that the pollutant concentrations are negatively correlated with ozone concentrations. This is also consistent with figure @fig:Pollutants (correlation plot)
 
@@ -198,7 +198,7 @@ As a first iteration, a linear model with multiple independent variables will be
 If the linear model mean square error, computed using predictions of ozone and observation, is below 0.5 a more involved model will be used. Two candidates for the second iteration of the predictive model will be considered. A fully connected neural network and a model produced with genetic programming packages in python for model discovery. 
 In order to train the neural network pollutant measurements as well as  from 9 out of the 12 months will be used as well as the corresponding mean wind direction values of Banquiao coupled with the ozone measurements from the 6 neighboring stations shown below. In order to validate the model, 12 the remaining data will be used.
 
-![Geographic location of 7 stations we focused on](images/geogra.png){#fig:MetereologicalVars width=7in}
+![Geographic location of 7 stations we focused on](images/geogra.jpg){#fig:MetereologicalVars width=6in}
 
 
 This manuscript is a template (aka "rootstock") for [Manubot](https://manubot.org/ "Manubot"), a tool for writing scholarly manuscripts.

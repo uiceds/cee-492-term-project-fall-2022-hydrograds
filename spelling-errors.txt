@@ -37,7 +37,7 @@ exercitation
 fugiat
 Guanyin
 Guting
-heatmap
+Heatmap
 incididunt
 ipsum
 irure
@@ -54,7 +54,6 @@ Lorem
 LSTM
 Luo
 magna
-MetereologicalVars
 mollit
 nisi
 NMHC

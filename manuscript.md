@@ -40,9 +40,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/6cc2b1f0eaf1cb30112ee41fba2b79fd622d1852/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/6cc2b1f0eaf1cb30112ee41fba2b79fd622d1852/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/6cc2b1f0eaf1cb30112ee41fba2b79fd622d1852/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/bea3e17a4ddc0d96a61a69fb63a664eb37100977/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/bea3e17a4ddc0d96a61a69fb63a664eb37100977/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/bea3e17a4ddc0d96a61a69fb63a664eb37100977/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -64,9 +64,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/6cc2b1f0eaf1cb30112ee41fba2b79fd622d1852/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/bea3e17a4ddc0d96a61a69fb63a664eb37100977/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-hydrograds@6cc2b1f](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/6cc2b1f0eaf1cb30112ee41fba2b79fd622d1852)
+from [uiceds/cee-492-term-project-fall-2022-hydrograds@bea3e17](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/bea3e17a4ddc0d96a61a69fb63a664eb37100977)
 on October 30, 2022.
 </em></small>
 
@@ -167,16 +167,18 @@ After the air quality data has been processed the strongest O~3~ predictors will
 | **WIND_SPEED_10min** | 8682      | -6.21E-15 | 1.00    | -1.43   | -0.72   | -0.18   | 0.53    | 7.92    |
 | **WS_HR**            | 8680      | -2.83E-15 | 1.00    | -1.67   | -0.80   | -0.12   | 0.56    | 7.86    |
 
-![Heatmap](heatmap.jpg){#fig:heatmap}{height="13px"}
-
-![variables](images/InformationDensity.png){#fig:var}{height="13px"}
+![Heatmap](heatmap.jpg){#fig:heatmap}
+![Hour](hour.png){#fig:hour}
+![month](month.png){#fig:month}
+![O3 & Independent variable](hour.png){#fig:O3}
+![variables](images/InformationDensity.png){#fig:var}
 
 
 The independent variables were segmented in pollutants and meteorological measurements. In order to visualize how the measurements change throughout the year the values were average per month. Then the resulting values were standardized using their mean. Once the values were standardized they were plotted against time.
 
-](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/blob/main/content/images/Pollutants.png "Standardized pollutants and ozone monthly concentration changes"){#fig:Pollutants}
+![Standardized pollutants and ozone monthly concentration changes](images/Pollutants.png) ""){#fig:Pollutants}
 
-](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/blob/main/content/images/Meteo_Vars.png "Standardized meteorological measurements and standardized ozone monthly concentration changes"){#fig:MetereologicalVars}
+![Standardized meteorological measurements and standardized ozone monthly concentration changes](images/Meteo_Vars.png){#fig:MetereologicalVars}
 
 As seen in the previous figure, O3 peaked in the months when concentration of the nitrogen based pollutants and non-methane hydrocarbons dropped. This is especially the case for NO concentrations (green line). This pattern of corresponding decreasing pollutant concentrations and increasing ozone could suggest that the pollutant concentrations are negatively correlated with ozone concentrations. This is also consistent with figure … (correlation plot)
 In regards to the meteorological variables, UVB (ultraviolet index) and air temperature peak in the same months. Both temperature and UVB experience and increase in their values from the beginning of the year peaking in June. After June, both values experience a steady decrease. No discernable pattern can be observed in terms of the relation of the latter two variables and ozone concentrations. 
@@ -185,7 +187,6 @@ Wind direction values are telling of changes in direction with respect to yearly
 
 ## Predictive Modeling
 
-](https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/square.png "Square image"){#fig:square-image}
 
 
 This manuscript is a template (aka "rootstock") for [Manubot](https://manubot.org/ "Manubot"), a tool for writing scholarly manuscripts.

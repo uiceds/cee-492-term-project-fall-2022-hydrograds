@@ -40,9 +40,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/0e14a1de19be9f1cbb2c6cbc3edbf5b2ae051cfa/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/0e14a1de19be9f1cbb2c6cbc3edbf5b2ae051cfa/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/0e14a1de19be9f1cbb2c6cbc3edbf5b2ae051cfa/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/b39aece55a86a3a38b3996cf2defbd7e10082350/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/b39aece55a86a3a38b3996cf2defbd7e10082350/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/b39aece55a86a3a38b3996cf2defbd7e10082350/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -64,9 +64,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/0e14a1de19be9f1cbb2c6cbc3edbf5b2ae051cfa/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/b39aece55a86a3a38b3996cf2defbd7e10082350/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-hydrograds@0e14a1d](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/0e14a1de19be9f1cbb2c6cbc3edbf5b2ae051cfa)
+from [uiceds/cee-492-term-project-fall-2022-hydrograds@b39aece](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/b39aece55a86a3a38b3996cf2defbd7e10082350)
 on October 30, 2022.
 </em></small>
 
@@ -150,6 +150,11 @@ After the air quality data has been processed the strongest O~3~ predictors will
 
 ## Exploratory Data Analysis:
 
+<<<<<<< HEAD
+
+
+![Heatmap](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/blob/main/content/heatmap.jpg?sanitize=true){#fig:heatmap}{height="13px"}
+=======
 ![
 **Heatmap**
 Loaded from the latest version of image on GitHub.
@@ -169,6 +174,8 @@ Wind direction values are telling of changes in direction with respect to yearly
 ## Predictive Modeling
 
 ](https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/square.png "Square image"){#fig:square-image}
+>>>>>>> 0e14a1de19be9f1cbb2c6cbc3edbf5b2ae051cfa
+
 
 This manuscript is a template (aka "rootstock") for [Manubot](https://manubot.org/ "Manubot"), a tool for writing scholarly manuscripts.
 Use this template as a starting point for your manuscript.

@@ -132,9 +132,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/6042cc94a7880f39633dc5033e6a9becda28286f/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/6042cc94a7880f39633dc5033e6a9becda28286f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/6042cc94a7880f39633dc5033e6a9becda28286f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f98732ff2ba65eb7ca0936a87e343accc44ed6fc/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f98732ff2ba65eb7ca0936a87e343accc44ed6fc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f98732ff2ba65eb7ca0936a87e343accc44ed6fc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -155,9 +155,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/6042cc94a7880f39633dc5033e6a9becda28286f/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f98732ff2ba65eb7ca0936a87e343accc44ed6fc/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/6042cc94a7880f39633dc5033e6a9becda28286f">uiceds/cee-492-term-project-fall-2022-hydrograds@6042cc9</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/f98732ff2ba65eb7ca0936a87e343accc44ed6fc">uiceds/cee-492-term-project-fall-2022-hydrograds@f98732f</a>
 on October 30, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -273,7 +273,15 @@ Department of CEE, University of Illinois at Urbana&amp;Champaign
 <p>The purpose of this project is to predict O<sub>3</sub> concentrations using measurements of concentration of other pollutants and available meteorological measurements. Ozone might be formed when heat and sunlight cause chemical reactions between oxides of nitrogen (NO<sub>x</sub>) and Volatile Organic Compounds (VOC), which are also known as Hydrocarbons. Therefore it could be hypothesized that using measurements of NO<sub>x</sub> as an independent variable a model could be developed to predict O<sub>3</sub> concentrations. Additionally, meteorological variables such as air temperature, relative humidity(RH) and ultraviolet index (UVB - UVI) could be included as independent variables to assess their influence on temporal variability of ozone. As an additional step wind-related variables such as mean wind velocity and direction will be included to study their effect on temporal variability of ozone.</p>
 <p>After the air quality data has been processed the strongest O<sub>3</sub> predictors will be determined using PCA. PCA could be used to identify the main axes of variance within the dataset and explore underlying correlations that exist in a set of variables. Variables that are highly correlated cluster together. Using PCA 2D figures per each pair of variables are not needed, instead all the variables could be visualized simultaneously. Differences on PC1 are more important than differences on PC2. After plotting PCA plots, a heatmap could also be plotted to check the results. As additional criteria to identify the strongest predictors a LSTM network (long short-term memory network) can be used since the data used is time dependent. The network should contain several LSTM layers and fully-connected layers. The output should contain the pollution concentration and will point out the weights assigned to each correlated criterion, the values of such weights should also indicate what the strongest predictors are. Once the strongest predictors have been identified, genetic programming will be used to develop the models to predict O<sub>3</sub> concentrations.</p>
 <h2 id="exploratory-data-analysis">Exploratory Data Analysis:</h2>
-<table>
+<p><img src="images/heatmap.jpg" id="fig:heatmap" style="width:5in" alt="Heatmap" />
+<img src="images/hour.png" id="fig:hour" style="width:5in" alt="Hour" />
+<img src="images/month.png" id="fig:month" style="width:5in" alt="month" />
+<img src="images/O312.jpg" id="fig:O3" style="width:5in" alt="O3 &amp; Independent variable" />
+<img src="images/InformationDensity.png" id="fig:var" style="width:5in" alt="variables" /></p>
+<div id="tbl:2" class="tablenos">
+<table id="tbl:2">
+<caption><span>Table 2:</span> Descriptive statistics of features that compose in this analysis
+</caption>
 <thead>
 <tr class="header">
 <th></th>
@@ -422,11 +430,7 @@ Department of CEE, University of Illinois at Urbana&amp;Champaign
 </tr>
 </tbody>
 </table>
-<p><img src="heatmap.jpg" id="fig:heatmap" alt="Heatmap" />
-<img src="hour.png" id="fig:hour" alt="Hour" />
-<img src="month.png" id="fig:month" alt="month" />
-<img src="hour.png" id="fig:O3" alt="O3 &amp; Independent variable" />
-<img src="images/InformationDensity.png" id="fig:var" alt="variables" /></p>
+</div>
 <h2 id="predictive-modeling">Predictive Modeling</h2>
 <p>The independent variables were segmented in pollutants and meteorological measurements. In order to visualize how the measurements change throughout the year the values were average per month. Then the resulting values were standardized using their mean. Once the values were standardized they were plotted against time.</p>
 <div id="fig:Pollutants" class="fignos">
@@ -532,7 +536,7 @@ Manubot plugins provide easier, more convenient visualization of and navigation 
 <p>Figure <a href="#fig:wide-image">5</a></p>
 <p>Figure <a href="#fig:tall-image">6</a></p>
 <p>Figure <a href="#fig:vector-image">7</a></p>
-<p>Table <a href="#tbl:bowling-scores">2</a></p>
+<p>Table <a href="#tbl:bowling-scores">3</a></p>
 <p>Equation <a href="#eq:regular-equation">1</a></p>
 <p>Equation <a href="#eq:long-equation">2</a></p>
 <h2 id="quotes-and-code">Quotes and code</h2>
@@ -586,7 +590,7 @@ White background specified to serve as a backdrop for transparent sections of th
 <h2 id="tables">Tables</h2>
 <div id="tbl:bowling-scores" class="tablenos">
 <table id="tbl:bowling-scores">
-<caption><span>Table 2:</span> A table with a top caption and specified relative column widths.
+<caption><span>Table 3:</span> A table with a top caption and specified relative column widths.
 </caption>
 <thead>
 <tr class="header">
@@ -624,7 +628,7 @@ White background specified to serve as a backdrop for transparent sections of th
 </div>
 <div id="tbl:constant-digits" class="tablenos">
 <table id="tbl:constant-digits">
-<caption><span>Table 3:</span> A table too wide to fit within page.
+<caption><span>Table 4:</span> A table too wide to fit within page.
 </caption>
 <colgroup>
 <col style="width: 5%" />
@@ -660,9 +664,9 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
-<div id="tbl:1565c2be-e685-4eeb-bff4-a32c8afefdab" class="tablenos">
+<div id="tbl:f4a52484-c170-4467-a529-2c3b70ea6949" class="tablenos">
 <table id="tbl:">
-<caption><span>Table 4:</span> A table with merged cells using the <code>attributes</code> plugin.
+<caption><span>Table 5:</span> A table with merged cells using the <code>attributes</code> plugin.
 </caption>
 <thead>
 <tr class="header">

@@ -40,9 +40,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/6042cc94a7880f39633dc5033e6a9becda28286f/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/6042cc94a7880f39633dc5033e6a9becda28286f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/6042cc94a7880f39633dc5033e6a9becda28286f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f98732ff2ba65eb7ca0936a87e343accc44ed6fc/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f98732ff2ba65eb7ca0936a87e343accc44ed6fc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f98732ff2ba65eb7ca0936a87e343accc44ed6fc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -64,9 +64,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/6042cc94a7880f39633dc5033e6a9becda28286f/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f98732ff2ba65eb7ca0936a87e343accc44ed6fc/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-hydrograds@6042cc9](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/6042cc94a7880f39633dc5033e6a9becda28286f)
+from [uiceds/cee-492-term-project-fall-2022-hydrograds@f98732f](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/f98732ff2ba65eb7ca0936a87e343accc44ed6fc)
 on October 30, 2022.
 </em></small>
 
@@ -149,7 +149,11 @@ The purpose of this project is to predict O~3~ concentrations using measurements
 After the air quality data has been processed the strongest O~3~ predictors will be determined using PCA. PCA could be used to identify the main axes of variance within the dataset and explore underlying correlations that exist in a set of variables. Variables that are highly correlated cluster together. Using PCA 2D figures per each pair of variables are not needed, instead all the variables could be visualized simultaneously. Differences on PC1 are more important than differences on PC2. After plotting PCA plots, a heatmap could also be plotted to check the results. As additional criteria to identify the strongest predictors a LSTM network (long short-term memory network) can be used since the data used is time dependent. The network should contain several LSTM layers and fully-connected layers. The output should contain the pollution concentration and will point out the weights assigned to each correlated criterion, the values of such weights should also indicate what the strongest predictors are. Once the strongest predictors have been identified, genetic programming will be used to develop the models to predict O~3~ concentrations. 
 
 ## Exploratory Data Analysis:
-
+![Heatmap](images/heatmap.jpg){#fig:heatmap width=5in}
+![Hour](images/hour.png){#fig:hour width=5in}
+![month](images/month.png){#fig:month width=5in}
+![O3 & Independent variable](images/O312.jpg){#fig:O3 width=5in}
+![variables](images/InformationDensity.png){#fig:var width=5in}
 
 
 |                      | **count** | **mean**  | **std** | **min** | **25%** | **50%** | **75%** | **max** |
@@ -167,11 +171,10 @@ After the air quality data has been processed the strongest O~3~ predictors will
 | **WIND_SPEED_10min** | 8682      | -6.21E-15 | 1.00    | -1.43   | -0.72   | -0.18   | 0.53    | 7.92    |
 | **WS_HR**            | 8680      | -2.83E-15 | 1.00    | -1.67   | -0.80   | -0.12   | 0.56    | 7.86    |
 
-![Heatmap](heatmap.jpg){#fig:heatmap}
-![Hour](hour.png){#fig:hour}
-![month](month.png){#fig:month}
-![O3 & Independent variable](hour.png){#fig:O3}
-![variables](images/InformationDensity.png){#fig:var}
+Table:Descriptive statistics of features that compose in this analysis 
+{#tbl:2}
+
+
 
 
 

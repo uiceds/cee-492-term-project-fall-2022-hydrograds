@@ -45,12 +45,9 @@ content/01.abstract.md:50:PCA
 content/01.abstract.md:59:NMHC
 content/01.abstract.md:62:NOx
 content/01.abstract.md:65:UVB
-content/01.abstract.md:71:cee
 content/01.abstract.md:71:heatmap
 content/01.abstract.md:71:heatmap
 content/01.abstract.md:71:Heatmap
-content/01.abstract.md:73:cee
-content/01.abstract.md:73:Heatmap
 content/01.abstract.md:78:cee
 content/01.abstract.md:80:cee
 content/01.abstract.md:80:MetereologicalVars

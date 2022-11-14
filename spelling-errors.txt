@@ -9,14 +9,14 @@ CEE
 Champaign
 COND
 CSV
-Dataset
+dataset
 Datong
 Dayuan
 DIREC
 EDA
 Guanyin
 Guting
-Heatmap
+heatmap
 JadeJi
 Ji
 Jiewen

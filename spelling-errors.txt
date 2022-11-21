@@ -9,7 +9,7 @@ CEE
 Champaign
 CNNs
 COND
-Convolutional
+convolutional
 CSV
 dataset
 datasets

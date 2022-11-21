@@ -40,9 +40,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/567bbd2f3c9a15fab9aaaf3b104d8200bd735755/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/567bbd2f3c9a15fab9aaaf3b104d8200bd735755/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/567bbd2f3c9a15fab9aaaf3b104d8200bd735755/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/82dadc6c9aaa6d07240a5d460a3e495d21b2b921/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/82dadc6c9aaa6d07240a5d460a3e495d21b2b921/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/82dadc6c9aaa6d07240a5d460a3e495d21b2b921/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -64,9 +64,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/567bbd2f3c9a15fab9aaaf3b104d8200bd735755/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/82dadc6c9aaa6d07240a5d460a3e495d21b2b921/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-hydrograds@567bbd2](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/567bbd2f3c9a15fab9aaaf3b104d8200bd735755)
+from [uiceds/cee-492-term-project-fall-2022-hydrograds@82dadc6](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/82dadc6c9aaa6d07240a5d460a3e495d21b2b921)
 on November 21, 2022.
 </em></small>
 
@@ -243,7 +243,7 @@ The current modeling effort might indicate that ozone concentrations might not b
 
 
 
-## Predictive Modeling
+### Long Short-term Memory Modeling(LSTM)
 
 Convolutional neural networks (CNN) use filters to extend the depth of the input volume. Compared with regular neural network, it indicate the relationship between each cells and better capture edge (changed) feature of the network. One draw back of CNN is that it's gradients can explode or vanish which may restrict neural network performance. Long short-term memory use two path for long (Cell state) and short memories (hidden state) to avoid exploding/vanishing gradient problem. It have three gates that determined the output value together: forget gate determine which percentage of long-term memory is remembered using a Sigmoid function; input gate calculate the potential memory using a Tanh function as well as the percentage of potential memory to remember using the same approach with the forget gate; and output gate multiply a Tanh function with long term memory result to obtain the output. long short-term memory network which has two hidden LSTM layers to increase the depth of the model. It will insure the model become more accuracy since the upper LSTM layer could serve as a sequence observations over time. 
  

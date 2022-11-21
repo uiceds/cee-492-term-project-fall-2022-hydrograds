@@ -20,7 +20,7 @@ EDA
 GRU
 Guanyin
 Guting
-heatmap
+Heatmap
 hyperparameters
 JadeJi
 Ji
@@ -40,7 +40,7 @@ PCA
 Pingzhen
 ppb
 predicte
-Relu
+relu
 repurposing
 RMSE
 Rourou

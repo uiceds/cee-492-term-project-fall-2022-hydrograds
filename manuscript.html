@@ -69,9 +69,9 @@
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/5f2eaf4a63ac642a2fd4a310ad40ea39391b7bd9/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/5f2eaf4a63ac642a2fd4a310ad40ea39391b7bd9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/5f2eaf4a63ac642a2fd4a310ad40ea39391b7bd9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/ab986c31e875e6e8885406b0050711d47aa18d84/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/ab986c31e875e6e8885406b0050711d47aa18d84/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/ab986c31e875e6e8885406b0050711d47aa18d84/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -85,9 +85,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/5f2eaf4a63ac642a2fd4a310ad40ea39391b7bd9/">permalink</a>)
+(<a href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/ab986c31e875e6e8885406b0050711d47aa18d84/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/5f2eaf4a63ac642a2fd4a310ad40ea39391b7bd9">uiceds/cee-492-term-project-fall-2022-hydrograds@5f2eaf4</a>
+from <a href="https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/ab986c31e875e6e8885406b0050711d47aa18d84">uiceds/cee-492-term-project-fall-2022-hydrograds@ab986c3</a>
 on November 21, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -206,195 +206,57 @@ Department of CEE, University of Illinois at Urbana&amp;Champaign
 <p>In order to explore the relation between the dependent variable and independent variables several scatter plots were created between meteorological variables, pollutant concentrations and ozone concentrations. Additionally, a heatmap was generated to investigate the correlation values between ozone concentration and independent variables. The most correlated variables are RH(relative humidity) and UVB(Ultraviolet index). RH is negatively correlated with ozone,value of -0.51, while UVB is positively correlated, value of 0.51. Another relevant observation was that concentrations of nitrogen-related chemicals are highly correlated between each other, which is close to the truth.</p>
 <div id="fig:heatmap" class="fignos">
 <figure>
-<img src="images/heatmap.jpg" style="width:6in" alt="Figure 1: Heatmap for the variables we considered in this analysis" /><figcaption aria-hidden="true"><span>Figure 1:</span> Heatmap for the variables we considered in this analysis</figcaption>
+<img src="images/heatmap.jpg" style="width:6in" alt="Figure 1: Correlation matrix for hourly values" /><figcaption aria-hidden="true"><span>Figure 1:</span> Correlation matrix for hourly values</figcaption>
 </figure>
 </div>
-<p>Furthermore, the fraction of available measurements, meaning the number of data points available divided by the number of hours in a year, was computed for all stations and all measured variables. This computation helped visualize the stations that missed the least data points as well as the variables whose values are recorded the most consistently through different stations. The station with the highest fraction of available measurements was Banquiao, as seen in the Figure <a href="#fig:var">2</a>. For this reason the remaining portion of this EDA was devoted to this station.</p>
+<p>Furthermore, the fraction of available measurements, meaning the number of data points available divided by the number of hours in a year, was computed for all stations and all measured variables. This computation helped visualize the stations that missed the least data points as well as the variables whose values are recorded the most consistently through different stations. The station with the highest fraction of available measurements was Banquiao, as seen in the Figure <a href="#fig:var">3</a>. For this reason the remaining portion of this EDA was devoted to this station.</p>
 <div id="fig:var" class="fignos">
 <figure>
 <img src="images/InformationDensity.png" style="width:6in" alt="Figure 2: Data availability of air quality stations" /><figcaption aria-hidden="true"><span>Figure 2:</span> Data availability of air quality stations</figcaption>
 </figure>
 </div>
-<p>Other relevant statistics from the Banquio air quality station are shown as Table <a href="#tbl:2">2</a>.</p>
-<div id="tbl:2" class="tablenos">
-<table id="tbl:2">
-<caption><span>Table 2:</span> Descriptive statistics of features that compose in Banqiao Station
-</caption>
-<thead>
-<tr class="header">
-<th></th>
-<th><strong>count</strong></th>
-<th><strong>mean</strong></th>
-<th><strong>std</strong></th>
-<th><strong>min</strong></th>
-<th><strong>25%</strong></th>
-<th><strong>50%</strong></th>
-<th><strong>75%</strong></th>
-<th><strong>max</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>AMB_TEMP</strong></td>
-<td>8682</td>
-<td>1.18E-15</td>
-<td>1.00</td>
-<td>-2.47</td>
-<td>-0.89</td>
-<td>0.15</td>
-<td>0.68</td>
-<td>2.25</td>
-</tr>
-<tr class="even">
-<td><strong>NMHC</strong></td>
-<td>8619</td>
-<td>-4.74E-15</td>
-<td>1.00</td>
-<td>-1.32</td>
-<td>-0.62</td>
-<td>-0.30</td>
-<td>0.29</td>
-<td>16.26</td>
-</tr>
-<tr class="odd">
-<td><strong>NO</strong></td>
-<td>8462</td>
-<td>3.20E-15</td>
-<td>1.00</td>
-<td>-0.75</td>
-<td>-0.50</td>
-<td>-0.32</td>
-<td>0.05</td>
-<td>23.55</td>
-</tr>
-<tr class="even">
-<td><strong>NO2</strong></td>
-<td>8462</td>
-<td>1.56E-15</td>
-<td>1.00</td>
-<td>-1.94</td>
-<td>-0.78</td>
-<td>-0.10</td>
-<td>0.57</td>
-<td>5.48</td>
-</tr>
-<tr class="odd">
-<td><strong>NOx</strong></td>
-<td>8462</td>
-<td>1.62E-15</td>
-<td>1.00</td>
-<td>-1.54</td>
-<td>-0.69</td>
-<td>-0.20</td>
-<td>0.42</td>
-<td>14.67</td>
-</tr>
-<tr class="even">
-<td><strong>O3</strong></td>
-<td>8685</td>
-<td>-8.78E-16</td>
-<td>1.00</td>
-<td>-1.35</td>
-<td>-0.80</td>
-<td>-0.07</td>
-<td>0.54</td>
-<td>6.06</td>
-</tr>
-<tr class="odd">
-<td><strong>RH</strong></td>
-<td>8684</td>
-<td>-1.56E-15</td>
-<td>1.00</td>
-<td>-4.85</td>
-<td>-0.75</td>
-<td>0.17</td>
-<td>0.76</td>
-<td>2.35</td>
-</tr>
-<tr class="even">
-<td><strong>UVB</strong></td>
-<td>8684</td>
-<td>3.53E-15</td>
-<td>1.00</td>
-<td>-0.56</td>
-<td>-0.56</td>
-<td>-0.56</td>
-<td>0.12</td>
-<td>4.81</td>
-</tr>
-<tr class="odd">
-<td><strong>WD_Hour</strong></td>
-<td>8680</td>
-<td>2.64E-16</td>
-<td>1.00</td>
-<td>-1.58</td>
-<td>-0.78</td>
-<td>-0.59</td>
-<td>1.01</td>
-<td>2.32</td>
-</tr>
-<tr class="even">
-<td><strong>WIND_DIREC_10min</strong></td>
-<td>8682</td>
-<td>6.96E-16</td>
-<td>1.00</td>
-<td>-1.56</td>
-<td>-0.78</td>
-<td>-0.58</td>
-<td>1.01</td>
-<td>2.31</td>
-</tr>
-<tr class="odd">
-<td><strong>WIND_SPEED_10min</strong></td>
-<td>8682</td>
-<td>-6.21E-15</td>
-<td>1.00</td>
-<td>-1.43</td>
-<td>-0.72</td>
-<td>-0.18</td>
-<td>0.53</td>
-<td>7.92</td>
-</tr>
-<tr class="even">
-<td><strong>WS_HR</strong></td>
-<td>8680</td>
-<td>-2.83E-15</td>
-<td>1.00</td>
-<td>-1.67</td>
-<td>-0.80</td>
-<td>-0.12</td>
-<td>0.56</td>
-<td>7.86</td>
-</tr>
-</tbody>
-</table>
+<p>Other relevant statistics from the Banquio air quality station are shown in the following Table.</p>
+<div id="fig:var" class="fignos">
+<figure>
+<img src="images/Table_description.png" style="width:6in" alt="Figure 3: Statistics of air quality and relevant meteorological variables from Banqiao station" /><figcaption aria-hidden="true"><span>Figure 3:</span> Statistics of air quality and relevant meteorological variables from Banqiao station</figcaption>
+</figure>
 </div>
-<p>As described in previous sections, the dataset consists of hourly observations of ozone (dependent variable) and several pollutant concentrations and meteorological measurements (independent variables). The first step was to plot ozone against all of the independent variables to visualize if the data collapsed into any identifiable pattern, thus to later on use such a pattern to identify potential models. The measurements in an hourly time scale did not show any discernible pattern between the dependent and independent variables. As seen in figure <a href="#fig:O31">3</a>.</p>
+<p>As described in previous sections, the dataset consists of hourly observations of ozone (dependent variable) and several pollutant concentrations and meteorological measurements (independent variables). The first step was to plot ozone against all of the independent variables to visualize if the data collapsed into any identifiable pattern, thus to later on use such a pattern to identify potential models. The measurements in an hourly time scale did not show any discernible pattern between the dependent and independent variables. As seen in figure <a href="#fig:O31">4</a>.</p>
 <div id="fig:O31" class="fignos">
 <figure>
-<img src="images/O312.jpg" style="width:6in" alt="Figure 3: Scatter plots of hourly measurements of variables" /><figcaption aria-hidden="true"><span>Figure 3:</span> Scatter plots of hourly measurements of variables</figcaption>
+<img src="images/O3_corr.png" style="width:6in" alt="Figure 4: Scatter plots of hourly measurements of variables" /><figcaption aria-hidden="true"><span>Figure 4:</span> Scatter plots of hourly measurements of variables</figcaption>
 </figure>
 </div>
 <p>Plotting the raw data, i.e. the available measurements without any processing or transformation, did not yield any insights that could help elucidate the relation between the variables. Therefore, the data was normalized. Notwithstanding, normalization did not translate into plots where patterns could be identified. Thus, the data was processed again following two consecutive steps. First the values were averaged over a day and over a month producing a dataset of daily and monthly measurement. Second, such values were standardized by dividing them by the corresponding daily and monthly averages.</p>
-<p>The resulting daily and monthly standardized averages were plotted against time. Plotting the daily averaged variables shown plots where the fluctuations of the values happened in a relatively short time and thus such fluctuations obscured any pattern that could be observed in the data, as seen in the next figure. Conversely, when the monthly standardized averages were plotted against time it was visible that the pollutants concentrations shown similar time patterns as seen in figures <a href="#fig:day">4</a>.</p>
+<p>The resulting daily and monthly standardized averages were plotted against time. Plotting the daily averaged variables shown plots where the fluctuations of the values happened in a relatively short time and thus such fluctuations obscured any pattern that could be observed in the data, as seen in the next figure. Conversely, when the monthly standardized averages were plotted against time it was visible that the pollutants concentrations shown similar time patterns as seen in figures <a href="#fig:day">5</a>.</p>
 <div id="fig:day" class="fignos">
 <figure>
-<img src="images/day.jpg" style="width:6in" alt="Figure 4: Daily concentrations of ozone" /><figcaption aria-hidden="true"><span>Figure 4:</span> Daily concentrations of ozone</figcaption>
+<img src="images/day.jpg" style="width:6in" alt="Figure 5: Daily concentrations of ozone" /><figcaption aria-hidden="true"><span>Figure 5:</span> Daily concentrations of ozone</figcaption>
 </figure>
 </div>
 <div id="fig:Pollutants" class="fignos">
 <figure>
-<img src="images/Pollutants.png" style="width:6in" alt="Figure 5: Standardized pollutants and ozone monthly concentration changes" /><figcaption aria-hidden="true"><span>Figure 5:</span> Standardized pollutants and ozone monthly concentration changes</figcaption>
+<img src="images/Pollutants.png" style="width:6in" alt="Figure 6: Standardized pollutants and ozone monthly concentration changes" /><figcaption aria-hidden="true"><span>Figure 6:</span> Standardized pollutants and ozone monthly concentration changes</figcaption>
 </figure>
 </div>
 <div id="fig:MetereologicalVars" class="fignos">
 <figure>
-<img src="images/Meteo_Vars.png" style="width:6in" alt="Figure 6: Standardized meteorological measurements and standardized ozone monthly concentration changes" /><figcaption aria-hidden="true"><span>Figure 6:</span> Standardized meteorological measurements and standardized ozone monthly concentration changes</figcaption>
+<img src="images/Meteo_Vars.png" style="width:6in" alt="Figure 7: Standardized meteorological measurements and standardized ozone monthly concentration changes" /><figcaption aria-hidden="true"><span>Figure 7:</span> Standardized meteorological measurements and standardized ozone monthly concentration changes</figcaption>
 </figure>
 </div>
-<p>In regards to pollutant concentrations, O3 peaked in the months when concentration of the nitrogen based pollutants and non-methane hydrocarbons dropped. This is especially the case for NO concentrations (green line). This pattern of corresponding decreasing pollutant concentrations and increasing ozone could suggest that the pollutant concentrations are negatively correlated with ozone concentrations. This is also consistent with figure <a href="#fig:Pollutants">5</a> (correlation plot)</p>
-<p>In regards to the meteorological variables, UVB (ultraviolet index) and air temperature peak in the same months. Both temperature and UVB experience an increase in their values from the beginning of the year peaking in June. After June, both values experience a steady decrease. No matching pattern can be observed in terms of the relation of the latter two variables and ozone concentrations.</p>
-<p>The increase or decrease of the values of wind direction shown in figure <a href="#fig:MetereologicalVars">6</a> correspond to a relative shift in direction of the wind compared to the yearly wind direction. These shifts in the direction of the wind can be used later on the forecasting of O3 concentration. Wind direction could help elucidate if O3 concentration from upwind neighboring locations could affect O3 values in the location of interest, Banquiao.</p>
+<p>In regards to pollutant concentrations, O3 peaked in the months when concentration of the nitrogen based pollutants and non-methane hydrocarbons dropped. This is especially the case for NO concentrations (green line). This pattern of corresponding decreasing pollutant concentrations and increasing ozone could suggest that the pollutant concentrations are negatively correlated with ozone concentrations. This is also consistent with figure <a href="#fig:heatmap">1</a> (correlation plot). As shown in the figure correlation values for the nitrogen species are negative and vary from -0.41 to -0.5.</p>
+<p>In regards to the meteorological variables, UVB (ultraviolet index) and air temperature peak in the same months. Both temperature and UVB experience an increase in their values from the beginning of the year peaking in June. After June, both values experience a steady decrease. In the case of UVB a correlation of 0.51 can be observed in <a href="#fig:heatmap">1</a>.</p>
+<div id="fig:heatmap_d" class="fignos">
+<figure>
+<img src="images/daily_cor.png" style="width:6in" alt="Figure 8: Correlation matrix for daily values" /><figcaption aria-hidden="true"><span>Figure 8:</span> Correlation matrix for daily values</figcaption>
+</figure>
+</div>
+<div id="fig:heatmap_m" class="fignos">
+<figure>
+<img src="images/monthly_cor.png" style="width:6in" alt="Figure 9: Correlation matrix for monthly values" /><figcaption aria-hidden="true"><span>Figure 9:</span> Correlation matrix for monthly values</figcaption>
+</figure>
+</div>
+<p>In which refers to correlation values, two additional correlation matrices were produced. One for monthly average values and another for daily average values. As observed in the figures, correlation values of ozone with respect to other variables are generally lower compared to correlations values of hourly measurements. Thus, the hourly measurements will be use in further sections.</p>
 <h2 id="predictive-modeling">Predictive Modeling</h2>
 <h3 id="selection-of-neural-network-model">Selection of neural network model</h3>
 <p>Different configurations of neural networks where used: fully connected layers, here called NN for simplicity, convolutional neural networks (CNN), and long short-term memory (LSTM).</p>
@@ -402,7 +264,7 @@ Department of CEE, University of Illinois at Urbana&amp;Champaign
 <p>Convolutional neural networks (CNN) uses filters to extend the depth of the input volume. Compared with regular neural network, it indicates the relationship between and better capture edge features of the network. One drawback of CNN is that it’s gradients can explode or vanish which may restrict neural network performance. Long short-term memory use two path for long (cell state) and short memories (hidden state) to avoid exploding/vanishing gradient problem. LSTM has three gates that determined the output: forget gate determines which percentage of long-term memory is remembered using a Sigmoid function; input gate calculates the potential memory using a Tanh function as well as the percentage of potential memory to remember using the same approach with the forget gate; and output gate multiply a Tanh function with long term memory result to obtain the output.</p>
 <div id="fig:NN_RMSE=6in" class="fignos">
 <figure>
-<img src="images/NN_RMSE.png" #fig:NN_RMSE="6in" alt="Figure 7: RMSE values for different hyperparameters and NN configurations" /><figcaption aria-hidden="true"><span>Figure 7:</span> RMSE values for different hyperparameters and NN configurations</figcaption>
+<img src="images/NN_RMSE.png" #fig:NN_RMSE="6in" alt="Figure 10: RMSE values for different hyperparameters and NN configurations" /><figcaption aria-hidden="true"><span>Figure 10:</span> RMSE values for different hyperparameters and NN configurations</figcaption>
 </figure>
 </div>
 <p>Two convolutional neural network (CNN) were also tested. A first CNN had 8, fully connected layer with 18 neurons, Relu as activation function and a convolution window of size 5. The number of epochs used was 100 with η = 0.01. RMSE of CNN was 8.63 and mean average error (MAE) was 5.85, for reference the best preforming NN, hereafter called NN 8-L, had a RSME of 6.7 and a MAE of 4.64 for the training dataset. The second CNN had a one convolution layer of 64 neurons, two fully connected layers, Relu as activation function and a convolution window of size 2. The number of epochs used was 1000 with a η = 0.0001. RMSE was 6.26.</p>
@@ -410,21 +272,11 @@ Department of CEE, University of Illinois at Urbana&amp;Champaign
 <p>The following plots shows predicted O3 values with LSTM and observed O3 values</p>
 <div id="fig:LSTM_observed=4in" class="fignos">
 <figure>
-<img src="images/LSTM_observed.png" #fig:LSTM_observed="4in" alt="Figure 8: LSTM O3 predicte and observed values" /><figcaption aria-hidden="true"><span>Figure 8:</span> LSTM O3 predicte and observed values</figcaption>
+<img src="images/LSTM_observed.png" #fig:LSTM_observed="4in" alt="Figure 11: LSTM O3 predicte and observed values" /><figcaption aria-hidden="true"><span>Figure 11:</span> LSTM O3 predicte and observed values</figcaption>
 </figure>
 </div>
 <h3 id="additional-avenues-of-improvement">Additional avenues of improvement</h3>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-The current modeling effort might indicate that ozone concentrations might not be predicted with lower error values using the available dataset. Thus repurposing of the modeling effort towards a more error tolerant goal might be an alternative to yield further utility from the available dataset. For instance, the available dataset could be used for a binary classification model to predict if ozone levels are above or below 70 ppb. The aforementioned value is the threshold of the primary (public health) and secondary (public welfare) 8-hour ozone standards defined by the “2015 Revision to 2008 Ozone National Ambient Air Quality Standards (NAAQS) Related Documents”
-=======</p>
-<p>The current modeling effort might indicate that ozone concentrations might not be predicted with lower error values using the available dataset. Thus repurposing of the modeling effort towards a more error tolerant goal might be an alternative to yield utility from the available dataset. For instance, the available dataset could be used for a binary classification model to predict if ozone levels are above or below 70 ppb. The aforementioned value is the threshold of the primary (public health) and secondary (public welfare) 8-hour ozone standards defined by the “2015 Revision to 2008 Ozone National Ambient Air Quality Standards (NAAQS) Related Documents”</p>
-<h3 id="long-short-term-memory-modelinglstm">Long Short-term Memory Modeling(LSTM)</h3>
-<p>Convolutional neural networks (CNN) use filters to extend the depth of the input volume. Compared with regular neural network, it indicate the relationship between each cells and better capture edge (changed) feature of the network. One draw back of CNN is that it’s gradients can explode or vanish which may restrict neural network performance. Long short-term memory use two path for long (Cell state) and short memories (hidden state) to avoid exploding/vanishing gradient problem. It have three gates that determined the output value together: forget gate determine which percentage of long-term memory is remembered using a Sigmoid function; input gate calculate the potential memory using a Tanh function as well as the percentage of potential memory to remember using the same approach with the forget gate; and output gate multiply a Tanh function with long term memory result to obtain the output. long short-term memory network which has two hidden LSTM layers to increase the depth of the model. It will insure the model become more accuracy since the upper LSTM layer could serve as a sequence observations over time.</p>
-<p>While predict the model, we compare two methods with the same size of layers, CNN and Stacked LSTM. Our CNN model is formed by a convolutional layer with 64 filters, (2,2) window, and a relu activation function, as well as two dense layers. Similarly, long short-term memory model input data into two LSTM layers and pass 64 features into two dense layers with the same size as CNN. Notice that we took multivariate time series to achieve O3 concentration forecast, thus, we took the previous 5-hour data of 13 features which we think is relative to the O3 concentration to predict the concentration at the 6 th hour. The 13 features are as table <a href="#tbl:2">2</a> except O3, wind speed and wind direction data for ten minutes. Since last two features are highly correlation and be well captured by average wind speed and wind direction data in one hour. We Processed the time data and expand it into four variables which change periodic monthly and annual (cos function and sin function) to capture the affected by the time of day, week and month.
-The predict result is shown as below (draft). The red line represent the actual value of O3 concentration and the blue line shown the predict value. The root mean squared error of CNN is 6.2564 and 1.7582 for LSTM model after 1000 training steps with 0.0001 learning rate.</p>
-<p><img src="images/cnn.png" id="fig:cnn1" style="width:3in" alt="Predict result using CNN" />
-<img src="images/lstm.png" id="fig:lstm" style="width:3in" alt="Predict result using LSTM" />
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; 82dadc6c9aaa6d07240a5d460a3e495d21b2b921</p>
+<h1 id="the-current-modeling-effort-might-indicate-that-ozone-concentrations-might-not-be-predicted-with-lower-error-values-using-the-available-dataset.-thus-repurposing-of-the-modeling-effort-towards-a-more-error-tolerant-goal-might-be-an-alternative-to-yield-further-utility-from-the-available-dataset.-for-instance-the-available-dataset-could-be-used-for-a-binary-classification-model-to-predict-if-ozone-levels-are-above-or-below-70-ppb.-the-aforementioned-value-is-the-threshold-of-the-primary-public-health-and-secondary-public-welfare-8-hour-ozone-standards-defined-by-the-2015-revision-to-2008-ozone-national-ambient-air-quality-standards-naaqs-related-documents">The current modeling effort might indicate that ozone concentrations might not be predicted with lower error values using the available dataset. Thus repurposing of the modeling effort towards a more error tolerant goal might be an alternative to yield further utility from the available dataset. For instance, the available dataset could be used for a binary classification model to predict if ozone levels are above or below 70 ppb. The aforementioned value is the threshold of the primary (public health) and secondary (public welfare) 8-hour ozone standards defined by the “2015 Revision to 2008 Ozone National Ambient Air Quality Standards (NAAQS) Related Documents”</h1>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" role="doc-bibliography">

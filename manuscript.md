@@ -40,9 +40,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/ab986c31e875e6e8885406b0050711d47aa18d84/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/ab986c31e875e6e8885406b0050711d47aa18d84/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/ab986c31e875e6e8885406b0050711d47aa18d84/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/14806e62b7f99480ec4f7e73c4a53bcda0763a44/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/14806e62b7f99480ec4f7e73c4a53bcda0763a44/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/14806e62b7f99480ec4f7e73c4a53bcda0763a44/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -64,9 +64,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/ab986c31e875e6e8885406b0050711d47aa18d84/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/14806e62b7f99480ec4f7e73c4a53bcda0763a44/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-hydrograds@ab986c3](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/ab986c31e875e6e8885406b0050711d47aa18d84)
+from [uiceds/cee-492-term-project-fall-2022-hydrograds@14806e6](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/14806e62b7f99480ec4f7e73c4a53bcda0763a44)
 on November 21, 2022.
 </em></small>
 
@@ -208,7 +208,9 @@ The following plots shows predicted O3 values with LSTM and observed O3 values
 ![LSTM O3 predicte and observed values](images/LSTM_observed.png){#fig:LSTM_observed=4in}
 
 ### Additional avenues of improvement
+
 The current modeling effort might indicate that ozone concentrations might not be predicted with lower error values using the available dataset. Thus repurposing of the modeling effort towards a more error tolerant goal might be an alternative to yield further utility from the available dataset. For instance, the available dataset could be used for a binary classification model to predict if ozone levels are above or below 70 ppb. The aforementioned value is the threshold of the primary (public health) and secondary (public welfare) 8-hour ozone standards defined by the “2015 Revision to 2008 Ozone National Ambient Air Quality Standards (NAAQS) Related Documents” 
+
 =======
 
 ## References {.page_break_before}

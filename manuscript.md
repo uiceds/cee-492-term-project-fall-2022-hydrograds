@@ -40,9 +40,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/9ae6b8a6f5572359becc26c774bc0cebaa72418c/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/9ae6b8a6f5572359becc26c774bc0cebaa72418c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/9ae6b8a6f5572359becc26c774bc0cebaa72418c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/d38d422ef08a8b90360799b2347e32fa1bc84b84/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/d38d422ef08a8b90360799b2347e32fa1bc84b84/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/d38d422ef08a8b90360799b2347e32fa1bc84b84/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -64,9 +64,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/9ae6b8a6f5572359becc26c774bc0cebaa72418c/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/d38d422ef08a8b90360799b2347e32fa1bc84b84/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-hydrograds@9ae6b8a](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/9ae6b8a6f5572359becc26c774bc0cebaa72418c)
+from [uiceds/cee-492-term-project-fall-2022-hydrograds@d38d422](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/d38d422ef08a8b90360799b2347e32fa1bc84b84)
 on November 21, 2022.
 </em></small>
 
@@ -206,7 +206,7 @@ The increase or decrease of the values of wind direction shown in figure @fig:Me
 Different configurations of neural networks where used: fully connected layers, here called NN for simplicity, convolutional neural networks (CNN), and long short-term memory (LSTM). 
 
 
-![RMSE values for different hyperparameters and NN configurations](images/error_values_corr.png){#fig:NN_RMSE=6in}
+![RMSE values for different hyperparameters and NN configurations](images/NN_RMSE.png){#fig:NN_RMSE=6in}
 
 A convolutional neural network (CNN) was also tested. The CNN had 8 layers with 18 neurons each. Relu was used as activation function. The number of epochs used was 100 with η = 0.01. RMSE of CNN was 8.63 and mean average error (MAE) was 5.85, for reference the best preforming NN, hereafter called NN 8-L, had a RSME of 6.7 and a MAE of 4.64 for the training dataset.
 
@@ -224,7 +224,7 @@ To summarize, the NN 8-L surpass the performance of CNN when measuring the RMSE 
 
 It is noticeable that correlation values are below 0.5 which might suggest that the relationship between predictand (error) and each of the potential predictors is non-linear. To measure error the MAE formula was used comparing observed ozone concentration and output of the CNN model. MAE was used for consistency since this formula was used during CNN training.
 
-![Coefficients of determination between error, predictors and ozone](images/error_values_corr.png){#fig:Cor_error width=6in}
+![Coefficients of determination between error, predictors and ozone](images/error_values_corr.png){#fig:Cor_error width=3in}
 
 Error and observed and predicted ozone concentration have the highest positive correlations. This might indicate that error is more pronounced for higher values of ozone concentration. Highest negative correlation was observed between error, nitrogen species and RH. This in turn could indicate that higher concentrations of these chemicals, or higher values of relative humidity, might translate into smaller error values. 
 

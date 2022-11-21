@@ -9,9 +9,9 @@ CEE
 Champaign
 CNNs
 COND
-Convolutional
+convolutional
 CSV
-Dataset
+dataset
 datasets
 Datong
 Dayuan
@@ -20,7 +20,7 @@ EDA
 GRU
 Guanyin
 Guting
-Heatmap
+heatmap
 hyperparameters
 JadeJi
 Ji
@@ -42,7 +42,7 @@ PCA
 Pingzhen
 ppb
 predictand
-Relu
+relu
 repurposing
 RMSE
 Rourou

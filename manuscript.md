@@ -1,11 +1,11 @@
 ---
-title: Forecasting and time variability analysis of Ozone concentrations using nitrogen oxide and meteorological variables as predictors
+title: Forecasting and time variability analysis of Ozone concentrations using nitrate oxide and meteorological variables as predictors
 keywords:
 - markdown
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-11-14'
+date-meta: '2022-11-21'
 author-meta:
 - Jiewen Luo
 - Rourou Ji
@@ -16,12 +16,12 @@ header-includes: |-
   Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="Forecasting and time variability analysis of Ozone concentrations using nitrogen oxide and meteorological variables as predictors" />
-  <meta name="citation_title" content="Forecasting and time variability analysis of Ozone concentrations using nitrogen oxide and meteorological variables as predictors" />
-  <meta property="og:title" content="Forecasting and time variability analysis of Ozone concentrations using nitrogen oxide and meteorological variables as predictors" />
-  <meta property="twitter:title" content="Forecasting and time variability analysis of Ozone concentrations using nitrogen oxide and meteorological variables as predictors" />
-  <meta name="dc.date" content="2022-11-14" />
-  <meta name="citation_publication_date" content="2022-11-14" />
+  <meta name="dc.title" content="Forecasting and time variability analysis of Ozone concentrations using nitrate oxide and meteorological variables as predictors" />
+  <meta name="citation_title" content="Forecasting and time variability analysis of Ozone concentrations using nitrate oxide and meteorological variables as predictors" />
+  <meta property="og:title" content="Forecasting and time variability analysis of Ozone concentrations using nitrate oxide and meteorological variables as predictors" />
+  <meta property="twitter:title" content="Forecasting and time variability analysis of Ozone concentrations using nitrate oxide and meteorological variables as predictors" />
+  <meta name="dc.date" content="2022-11-21" />
+  <meta name="citation_publication_date" content="2022-11-21" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -40,9 +40,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f354170321d1b8db4b8fedba161536542bbc39d6/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f354170321d1b8db4b8fedba161536542bbc39d6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f354170321d1b8db4b8fedba161536542bbc39d6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/9ae6b8a6f5572359becc26c774bc0cebaa72418c/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/9ae6b8a6f5572359becc26c774bc0cebaa72418c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/9ae6b8a6f5572359becc26c774bc0cebaa72418c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -64,10 +64,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f354170321d1b8db4b8fedba161536542bbc39d6/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/9ae6b8a6f5572359becc26c774bc0cebaa72418c/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-hydrograds@f354170](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/f354170321d1b8db4b8fedba161536542bbc39d6)
-on November 14, 2022.
+from [uiceds/cee-492-term-project-fall-2022-hydrograds@9ae6b8a](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/9ae6b8a6f5572359becc26c774bc0cebaa72418c)
+on November 21, 2022.
 </em></small>
 
 ## Authors
@@ -201,17 +201,77 @@ The increase or decrease of the values of wind direction shown in figure @fig:Me
 
 ## Predictive Modeling
 
-As a first iteration, a linear model with multiple independent variables will be optimized using available standardized measurements of ozone. A first model will be produced only using standardized pollutant values, and a second model will include as additional variables wind direction and upwind station standardized ozone concentrations. 
+### Selection of neural network model
 
-![Potential upwind station with respect to Banquiao](images/geogra.jpg){#fig:MetereologicalVars width=6in}
+Different configurations of neural networks where used: fully connected layers, here called NN for simplicity, convolutional neural networks (CNN), and long short-term memory (LSTM). 
 
-If after training, the linear model mean square error (computed using predictions of ozone and observation) is above a certain threshold, a more involved model will be used. Two candidates for the second iteration of the predictive model will be considered. A fully connected neural network and a model produced with genetic programming packages in python for model discovery. 
 
-In order to train the neural network, measurements from Banquiao of the first 8 months of the year will be used. The variables that will be used in the training are: pollutant and ozone measurements, wind direction, ozone measurements from the 6 potential upwind stations shown in figure.In order to validate the model, data from the remaining 4 months will be used in order to assess the model ability to forecast ozone concentrations. 
+![RMSE values for different hyperparameters and NN configurations](images/error_values_corr.png){#fig:NN_RMSE=6in}
 
+A convolutional neural network (CNN) was also tested. The CNN had 8 layers with 18 neurons each. Relu was used as activation function. The number of epochs used was 100 with η = 0.01. RMSE of CNN was 8.63 and mean average error (MAE) was 5.85, for reference the best preforming NN, hereafter called NN 8-L, had a RSME of 6.7 and a MAE of 4.64 for the training dataset.
+
+When comparing the performance of models on the testing dataset, NN 8-L had a MAE value of 6.54 on compared to a lower 6.31 MAE when using the CNN. This higher error might indicate that the NN overfitted  the training data. It is necessary to mention the training times of the NN and CNN. The NN needed approximately 10 minutes for training whereas the CNN required close to 3 minutes. Clearly this is due to the number of epochs used on training NN 8-L. However, when training the CNN during 300 epochs MAE did not drop below 5.8.  Thus the original number of epochs was used.
+
+To summarize, the NN 8-L surpass the performance of CNN when measuring the RMSE of the training dataset. Yet, with a significantly lower number of epochs and processing times similar values of MAE were achieved using the CNN. Moreover, with limited training CNN outperform NN-8L on the testing dataset which might indicate greater ability of the CNN model to  generalize and not overfit the data used on training. The latter argument clearly would be better supported via further testing with new data. If corroborated, CNN would be in consequence the most suitable model since generalization is of prime importance for regression models.
+
+![NN ozone prediction versus observations on training and testing datasets](images/NN_training_testing.png){#fig:NN_Train_Test width=6in}
+
+![CNN ozone prediction versus observations on training and testing datasets](images/CNN_training_testing.png){#fig:NN_Train_Test width=6in}
+
+### Error model
+
+#### Correlation of measured variables and error
+
+It is noticeable that correlation values are below 0.5 which might suggest that the relationship between predictand (error) and each of the potential predictors is non-linear. To measure error the MAE formula was used comparing observed ozone concentration and output of the CNN model. MAE was used for consistency since this formula was used during CNN training.
+
+![Coefficients of determination between error, predictors and ozone](images/error_values_corr.png){#fig:Cor_error width=6in}
+
+Error and observed and predicted ozone concentration have the highest positive correlations. This might indicate that error is more pronounced for higher values of ozone concentration. Highest negative correlation was observed between error, nitrogen species and RH. This in turn could indicate that higher concentrations of these chemicals, or higher values of relative humidity, might translate into smaller error values. 
+
+### Modeling prediction error
+
+Preliminary efforts were conducted to model error as a function of nitrogen species, RH and predicted O3. The same neural network configuration as the original CNN model was used. This decision was based on significant lower training times, approx. 2 minutes compared to 8 minutes of an NN with similar configuration. Data was normalized prior to model training and testing.
+
+MAE of the error model was 3.8 after 100 epochs with a learning rate of 0.005. Increasing the number of epochs on training did not translate in further reduction of MAE. Recall that CNN MAE error is 6.31, thus MAE = 3.8 on the error model is not satisfactory. 
+
+### Additional avenues of improvement
+
+The current modeling effort might indicate that ozone concentrations might not be predicted with lower error values using the available dataset. Thus repurposing of the modeling effort towards a more error tolerant goal might be an alternative to yield utility from the available dataset. For instance, the available dataset could be used for a binary classification model to predict if ozone levels are above or below 70 ppb. The aforementioned value is the threshold of the primary (public health) and secondary (public welfare) 8-hour ozone standards defined by the “2015 Revision to 2008 Ozone National Ambient Air Quality Standards (NAAQS) Related Documents” 
+
+
+
+
+
+
+## Predictive Modeling
+
+Convolutional neural networks (CNN) use filters to extend the depth of the input volume. Compared with regular neural network, it indicate the relationship between each cells and better capture edge (changed) feature of the network. One draw back of CNN is that it's gradients can explode or vanish which may restrict neural network performance. Long short-term memory use two path for long (Cell state) and short memories (hidden state) to avoid exploding/vanishing gradient problem. It have three gates that determined the output value together: forget gate determine which percentage of long-term memory is remembered using a Sigmoid function; input gate calculate the potential memory using a Tanh function as well as the percentage of potential memory to remember using the same approach with the forget gate; and output gate multiply a Tanh function with long term memory result to obtain the output. long short-term memory network which has two hidden LSTM layers to increase the depth of the model. It will insure the model become more accuracy since the upper LSTM layer could serve as a sequence observations over time. 
+
+Other relevant statistics from the Banquio air quality station are shown as Table @tbl:2. 
+While predict the model, we compare two methods with the same size of layers, CNN and Stacked LSTM. Our CNN model is formed by a convolutional layer with 64 filters, (2,2) window, and a relu activation function, as well as two dense layers. Similarly, long short-term memory model input data into two LSTM layers and pass 64 features into two dense layers with the same size as CNN. Notice that we took multivariate time series to achieve O3 concentration forecast, thus, we took the previous 5-hour data of 13 features which we think is relative to the O3 concentration to predict the concentration at the 6 th hour. The 13 features are as table @tbl:2 except O3, wind speed and wind direction data for ten minutes. Since last two features are highly correlation and be well captured by average wind speed and wind direction data in one hour. We Processed the time data and expand it into four variables which change periodic monthly and annual (cos function and sin function) to capture the affected by the time of day, week and month. 
+The predict result is shown as below (draft). The red line represent the actual value of O3 concentration and the blue line shown the predict value. The root mean squared error of CNN is 6.2564 and 1.7582 for LSTM model after 1000 training steps with 0.0001 learning rate.
+
+
+![Predict result using CNN](images/cnn.png){#fig:cnn1 width=6in}
+![Predict result using LSTM](images/lstm.png){#fig:lstm width=6in}
 
 
 ## References {.page_break_before}
 
 <!-- Explicitly insert bibliography here -->
 <div id="refs"></div>
+
+Reference:
+https://machinelearningmastery.com/return-sequences-and-return-states-for-lstms-in-keras/
+
+https://machinelearningmastery.com/stacked-long-short-term-memory-networks/
+
+https://en.wikipedia.org/wiki/Convolutional_neural_network#Convolutional_layer
+
+https://www.youtube.com/watch?v=YCzL96nL7j0 "Long Short-Term Memory (LSTM), Clearly Explained"
+
+https://www.youtube.com/watch?v=kGdbPnMCdOg  "Multivariate Time Series Forecasting Using LSTM, GRU & 1d CNNs"
+
+https://github.com/Dana2021/CEE498DS-Project1 
+
+https://blog.csdn.net/bryan__/article/details/51607215 "Introduce several common feature selection methods in conjunction with Scikit-learn"

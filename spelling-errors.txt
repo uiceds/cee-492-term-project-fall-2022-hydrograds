@@ -9,9 +9,9 @@ CEE
 Champaign
 CNNs
 COND
-convolutional
+Convolutional
 CSV
-Dataset
+dataset
 Datong
 Dayuan
 DIREC

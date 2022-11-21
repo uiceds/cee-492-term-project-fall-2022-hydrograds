@@ -40,9 +40,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/82dadc6c9aaa6d07240a5d460a3e495d21b2b921/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/82dadc6c9aaa6d07240a5d460a3e495d21b2b921/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/82dadc6c9aaa6d07240a5d460a3e495d21b2b921/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/cbde214d08ebdc3345abf0aa0fa7fc2ac93193a8/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/cbde214d08ebdc3345abf0aa0fa7fc2ac93193a8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/cbde214d08ebdc3345abf0aa0fa7fc2ac93193a8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -64,9 +64,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/82dadc6c9aaa6d07240a5d460a3e495d21b2b921/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/cbde214d08ebdc3345abf0aa0fa7fc2ac93193a8/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-hydrograds@82dadc6](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/82dadc6c9aaa6d07240a5d460a3e495d21b2b921)
+from [uiceds/cee-492-term-project-fall-2022-hydrograds@cbde214](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/cbde214d08ebdc3345abf0aa0fa7fc2ac93193a8)
 on November 21, 2022.
 </em></small>
 
@@ -205,36 +205,24 @@ The increase or decrease of the values of wind direction shown in figure @fig:Me
 
 Different configurations of neural networks where used: fully connected layers, here called NN for simplicity, convolutional neural networks (CNN), and long short-term memory (LSTM). 
 
+### Long short-term memory and convolutional neural networks
+
+Convolutional neural networks (CNN) uses filters to extend the depth of the input volume. Compared with regular neural network, it indicates the relationship between  and better capture edge features of the network. One drawback of CNN is that it's gradients can explode or vanish which may restrict neural network performance. Long short-term memory use two path for long (cell state) and short memories (hidden state) to avoid exploding/vanishing gradient problem. LSTM has three gates that determined the output: forget gate determines which percentage of long-term memory is remembered using a Sigmoid function; input gate calculates the potential memory using a Tanh function as well as the percentage of potential memory to remember using the same approach with the forget gate; and output gate multiply a Tanh function with long term memory result to obtain the output. 
 
 ![RMSE values for different hyperparameters and NN configurations](images/NN_RMSE.png){#fig:NN_RMSE=6in}
 
-A convolutional neural network (CNN) was also tested. The CNN had 8 layers with 18 neurons each. Relu was used as activation function. The number of epochs used was 100 with η = 0.01. RMSE of CNN was 8.63 and mean average error (MAE) was 5.85, for reference the best preforming NN, hereafter called NN 8-L, had a RSME of 6.7 and a MAE of 4.64 for the training dataset.
+Two convolutional neural network (CNN) were also tested. A first CNN had 8, fully connected layer with 18 neurons, Relu as activation function and a convolution window of size 5. The number of epochs used was 100 with η = 0.01. RMSE of CNN was 8.63 and mean average error (MAE) was 5.85, for reference the best preforming NN, hereafter called NN 8-L, had a RSME of 6.7 and a MAE of 4.64 for the training dataset. The second CNN had a one convolution layer of 64 neurons, two fully connected layers, Relu as activation function and a convolution window of size 2.  The number of epochs used was 1000 with a η = 0.0001. RMSE was 6.26. 
 
-When comparing the performance of models on the testing dataset, NN 8-L had a MAE value of 6.54 on compared to a lower 6.31 MAE when using the CNN. This higher error might indicate that the NN overfitted  the training data. It is necessary to mention the training times of the NN and CNN. The NN needed approximately 10 minutes for training whereas the CNN required close to 3 minutes. Clearly this is due to the number of epochs used on training NN 8-L. However, when training the CNN during 300 epochs MAE did not drop below 5.8.  Thus the original number of epochs was used.
+The LSTM had one 32 neuron layer, a second 64 neuron layer followed by two dense layers of 8 and 1 neuron, activation function used was Relu. Also LSTM training was don with the measurements from the previous  5 hours to predict ozone concentration of the 6th hour. Also, not only the most correlated predictors were used but all of the predictors except for wind speed and wind direction. RMSE for LSTM on the training data was 1.76, clearly LSTM outperformed the other neural network configurations.
 
-To summarize, the NN 8-L surpass the performance of CNN when measuring the RMSE of the training dataset. Yet, with a significantly lower number of epochs and processing times similar values of MAE were achieved using the CNN. Moreover, with limited training CNN outperform NN-8L on the testing dataset which might indicate greater ability of the CNN model to  generalize and not overfit the data used on training. The latter argument clearly would be better supported via further testing with new data. If corroborated, CNN would be in consequence the most suitable model since generalization is of prime importance for regression models.
+The following plots shows predicted O3 values with LSTM and observed O3 values
 
-![NN ozone prediction versus observations on training and testing datasets](images/NN_training_testing.png){#fig:NN_Train_Test width=6in}
-
-![CNN ozone prediction versus observations on training and testing datasets](images/CNN_training_testing.png){#fig:NN_Train_Test width=6in}
-
-### Error model
-
-#### Correlation of measured variables and error
-
-It is noticeable that correlation values are below 0.5 which might suggest that the relationship between predictand (error) and each of the potential predictors is non-linear. To measure error the MAE formula was used comparing observed ozone concentration and output of the CNN model. MAE was used for consistency since this formula was used during CNN training.
-
-![Coefficients of determination between error, predictors and ozone](images/error_values_corr.png){#fig:Cor_error width=3in}
-
-Error and observed and predicted ozone concentration have the highest positive correlations. This might indicate that error is more pronounced for higher values of ozone concentration. Highest negative correlation was observed between error, nitrogen species and RH. This in turn could indicate that higher concentrations of these chemicals, or higher values of relative humidity, might translate into smaller error values. 
-
-### Modeling prediction error
-
-Preliminary efforts were conducted to model error as a function of nitrogen species, RH and predicted O3. The same neural network configuration as the original CNN model was used. This decision was based on significant lower training times, approx. 2 minutes compared to 8 minutes of an NN with similar configuration. Data was normalized prior to model training and testing.
-
-MAE of the error model was 3.8 after 100 epochs with a learning rate of 0.005. Increasing the number of epochs on training did not translate in further reduction of MAE. Recall that CNN MAE error is 6.31, thus MAE = 3.8 on the error model is not satisfactory. 
+![LSTM O3 predicte and observed values](images/LSTM_observed.png){#fig:LSTM_observed=4in}
 
 ### Additional avenues of improvement
+<<<<<<< HEAD
+The current modeling effort might indicate that ozone concentrations might not be predicted with lower error values using the available dataset. Thus repurposing of the modeling effort towards a more error tolerant goal might be an alternative to yield further utility from the available dataset. For instance, the available dataset could be used for a binary classification model to predict if ozone levels are above or below 70 ppb. The aforementioned value is the threshold of the primary (public health) and secondary (public welfare) 8-hour ozone standards defined by the “2015 Revision to 2008 Ozone National Ambient Air Quality Standards (NAAQS) Related Documents” 
+=======
 
 The current modeling effort might indicate that ozone concentrations might not be predicted with lower error values using the available dataset. Thus repurposing of the modeling effort towards a more error tolerant goal might be an alternative to yield utility from the available dataset. For instance, the available dataset could be used for a binary classification model to predict if ozone levels are above or below 70 ppb. The aforementioned value is the threshold of the primary (public health) and secondary (public welfare) 8-hour ozone standards defined by the “2015 Revision to 2008 Ozone National Ambient Air Quality Standards (NAAQS) Related Documents” 
 
@@ -253,6 +241,7 @@ The predict result is shown as below (draft). The red line represent the actual 
 
 ![Predict result using CNN](images/cnn.png){#fig:cnn1 width=3in}
 ![Predict result using LSTM](images/lstm.png){#fig:lstm width=3in}
+>>>>>>> 82dadc6c9aaa6d07240a5d460a3e495d21b2b921
 
 
 ## References {.page_break_before}

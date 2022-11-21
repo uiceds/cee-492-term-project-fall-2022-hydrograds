@@ -40,9 +40,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/d38d422ef08a8b90360799b2347e32fa1bc84b84/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/d38d422ef08a8b90360799b2347e32fa1bc84b84/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/d38d422ef08a8b90360799b2347e32fa1bc84b84/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/567bbd2f3c9a15fab9aaaf3b104d8200bd735755/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/567bbd2f3c9a15fab9aaaf3b104d8200bd735755/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/567bbd2f3c9a15fab9aaaf3b104d8200bd735755/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -64,9 +64,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/d38d422ef08a8b90360799b2347e32fa1bc84b84/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/567bbd2f3c9a15fab9aaaf3b104d8200bd735755/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-hydrograds@d38d422](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/d38d422ef08a8b90360799b2347e32fa1bc84b84)
+from [uiceds/cee-492-term-project-fall-2022-hydrograds@567bbd2](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/567bbd2f3c9a15fab9aaaf3b104d8200bd735755)
 on November 21, 2022.
 </em></small>
 
@@ -246,14 +246,13 @@ The current modeling effort might indicate that ozone concentrations might not b
 ## Predictive Modeling
 
 Convolutional neural networks (CNN) use filters to extend the depth of the input volume. Compared with regular neural network, it indicate the relationship between each cells and better capture edge (changed) feature of the network. One draw back of CNN is that it's gradients can explode or vanish which may restrict neural network performance. Long short-term memory use two path for long (Cell state) and short memories (hidden state) to avoid exploding/vanishing gradient problem. It have three gates that determined the output value together: forget gate determine which percentage of long-term memory is remembered using a Sigmoid function; input gate calculate the potential memory using a Tanh function as well as the percentage of potential memory to remember using the same approach with the forget gate; and output gate multiply a Tanh function with long term memory result to obtain the output. long short-term memory network which has two hidden LSTM layers to increase the depth of the model. It will insure the model become more accuracy since the upper LSTM layer could serve as a sequence observations over time. 
-
-Other relevant statistics from the Banquio air quality station are shown as Table @tbl:2. 
+ 
 While predict the model, we compare two methods with the same size of layers, CNN and Stacked LSTM. Our CNN model is formed by a convolutional layer with 64 filters, (2,2) window, and a relu activation function, as well as two dense layers. Similarly, long short-term memory model input data into two LSTM layers and pass 64 features into two dense layers with the same size as CNN. Notice that we took multivariate time series to achieve O3 concentration forecast, thus, we took the previous 5-hour data of 13 features which we think is relative to the O3 concentration to predict the concentration at the 6 th hour. The 13 features are as table @tbl:2 except O3, wind speed and wind direction data for ten minutes. Since last two features are highly correlation and be well captured by average wind speed and wind direction data in one hour. We Processed the time data and expand it into four variables which change periodic monthly and annual (cos function and sin function) to capture the affected by the time of day, week and month. 
 The predict result is shown as below (draft). The red line represent the actual value of O3 concentration and the blue line shown the predict value. The root mean squared error of CNN is 6.2564 and 1.7582 for LSTM model after 1000 training steps with 0.0001 learning rate.
 
 
-![Predict result using CNN](images/cnn.png){#fig:cnn1 width=6in}
-![Predict result using LSTM](images/lstm.png){#fig:lstm width=6in}
+![Predict result using CNN](images/cnn.png){#fig:cnn1 width=3in}
+![Predict result using LSTM](images/lstm.png){#fig:lstm width=3in}
 
 
 ## References {.page_break_before}

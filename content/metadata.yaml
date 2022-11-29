@@ -1,5 +1,5 @@
 ---
-title: "Forecasting and time variability analysis of Ozone concentrations using nitrogen oxide and meteorological variables as predictors"
+title: "Forecasting and time variability analysis of Ozone concentrations using nitrate oxide and meteorological variables as predictors"
 keywords:
   - markdown
   - publishing
@@ -15,7 +15,7 @@ authors:
     
   - github: JadeJi
     name: Rourou Ji
-    initials: JR
+    initials: RJ
     email: rourouj2@illinois.edu
     affiliations:
       - Department of CEE, University of Illinois at Urbana&Champaign

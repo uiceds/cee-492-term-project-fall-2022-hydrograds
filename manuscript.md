@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-11-21'
+date-meta: '2022-11-29'
 author-meta:
 - Jiewen Luo
 - Rourou Ji
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Forecasting and time variability analysis of Ozone concentrations using nitrate oxide and meteorological variables as predictors" />
   <meta property="og:title" content="Forecasting and time variability analysis of Ozone concentrations using nitrate oxide and meteorological variables as predictors" />
   <meta property="twitter:title" content="Forecasting and time variability analysis of Ozone concentrations using nitrate oxide and meteorological variables as predictors" />
-  <meta name="dc.date" content="2022-11-21" />
-  <meta name="citation_publication_date" content="2022-11-21" />
+  <meta name="dc.date" content="2022-11-29" />
+  <meta name="citation_publication_date" content="2022-11-29" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -40,9 +40,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/4f6d3bee42e4b18274c9681cfb2d52bd555a850d/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/4f6d3bee42e4b18274c9681cfb2d52bd555a850d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/4f6d3bee42e4b18274c9681cfb2d52bd555a850d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/8a8d331945e32da1d816d84f11a6fa5b7ea5e762/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/8a8d331945e32da1d816d84f11a6fa5b7ea5e762/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/8a8d331945e32da1d816d84f11a6fa5b7ea5e762/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -64,10 +64,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/4f6d3bee42e4b18274c9681cfb2d52bd555a850d/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/8a8d331945e32da1d816d84f11a6fa5b7ea5e762/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-hydrograds@4f6d3be](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/4f6d3bee42e4b18274c9681cfb2d52bd555a850d)
-on November 21, 2022.
+from [uiceds/cee-492-term-project-fall-2022-hydrograds@8a8d331](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/8a8d331945e32da1d816d84f11a6fa5b7ea5e762)
+on November 29, 2022.
 </em></small>
 
 ## Authors

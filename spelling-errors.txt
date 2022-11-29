@@ -11,7 +11,7 @@ CNNs
 COND
 Convolutional
 CSV
-dataset
+Dataset
 Datong
 Dayuan
 DIREC

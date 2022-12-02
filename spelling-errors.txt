@@ -9,7 +9,8 @@ CEE
 Champaign
 CNNs
 COND
-convolutional
+Convolutional
+Correlationships
 CSV
 dataset
 Datong
@@ -19,7 +20,8 @@ EDA
 GRU
 Guanyin
 Guting
-heatmap
+Heatmap
+heatmaps
 hyperparameters
 JadeJi
 Ji
@@ -38,7 +40,8 @@ NNs
 Noomi
 NOx
 Pingzhen
-ppb
+Pollutions
+PPB
 predictand
 Relu
 repurposing
@@ -50,6 +53,7 @@ Scikit
 Shilin
 Sigmoid
 Songshan
+Standarized
 Tamsui
 Tanh
 Taoyuan

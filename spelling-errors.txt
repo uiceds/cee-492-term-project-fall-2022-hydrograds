@@ -9,7 +9,7 @@ CEE
 Champaign
 CNNs
 COND
-convolutional
+Convolutional
 Correlationships
 CSV
 dataset
@@ -20,9 +20,9 @@ EDA
 GRU
 Guanyin
 Guting
-heatmap
+Heatmap
 heatmaps
-Hyperparameters
+hyperparameters
 JadeJi
 Ji
 Jiewen
@@ -41,7 +41,7 @@ Noomi
 NOx
 Pingzhen
 Pollutions
-ppb
+PPB
 predictand
 Relu
 repurposing

@@ -40,9 +40,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f4097cac839c76c9a3500e4d4fa30b1ebd2d342a/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f4097cac839c76c9a3500e4d4fa30b1ebd2d342a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f4097cac839c76c9a3500e4d4fa30b1ebd2d342a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/de858effd8a4c4a5c5c923243b9b88f5d4c2a53d/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/de858effd8a4c4a5c5c923243b9b88f5d4c2a53d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/de858effd8a4c4a5c5c923243b9b88f5d4c2a53d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -64,9 +64,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f4097cac839c76c9a3500e4d4fa30b1ebd2d342a/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/de858effd8a4c4a5c5c923243b9b88f5d4c2a53d/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-hydrograds@f4097ca](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/f4097cac839c76c9a3500e4d4fa30b1ebd2d342a)
+from [uiceds/cee-492-term-project-fall-2022-hydrograds@de858ef](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/de858effd8a4c4a5c5c923243b9b88f5d4c2a53d)
 on December 2, 2022.
 </em></small>
 
@@ -98,7 +98,7 @@ on December 2, 2022.
 
 
 ## Forecasting and Time Variability Analysis of Ozone Concentrations Using Nitrogen Oxide and Meteorological Variables as Predictors 
-Bernardo Burbano, Jiewen Luo, Rourou Jo
+Bernardo Burbano, Jiewen Luo, Rourou Ji
 
 ## Introduction
 The purpose of this project is to predict O~3~ concentrations using measurements of concentration of other pollutants and available meteorological measurements.  Ozone might be formed when heat and sunlight cause chemical reactions between oxides of nitrogen (NO~x~) and Volatile Organic Compounds (VOC), which are also known as Hydrocarbons. Therefore it could be hypothesized that using measurements of NO~x~ as an independent variable a model could be developed to predict O~3~ concentrations. Additionally, meteorological variables such as air temperature, relative humidity(RH) and ultraviolet index (UVB - UVI) could be included as independent variables to assess their influence on temporal variability of ozone. As an additional step wind-related variables such as mean wind velocity and direction will be included to study their effect on temporal variability of ozone, too.

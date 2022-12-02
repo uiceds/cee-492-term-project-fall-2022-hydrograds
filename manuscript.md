@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-11-29'
+date-meta: '2022-12-02'
 author-meta:
 - Jiewen Luo
 - Rourou Ji
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Forecasting and time variability analysis of Ozone concentrations using nitrate oxide and meteorological variables as predictors" />
   <meta property="og:title" content="Forecasting and time variability analysis of Ozone concentrations using nitrate oxide and meteorological variables as predictors" />
   <meta property="twitter:title" content="Forecasting and time variability analysis of Ozone concentrations using nitrate oxide and meteorological variables as predictors" />
-  <meta name="dc.date" content="2022-11-29" />
-  <meta name="citation_publication_date" content="2022-11-29" />
+  <meta name="dc.date" content="2022-12-02" />
+  <meta name="citation_publication_date" content="2022-12-02" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -40,9 +40,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/8a8d331945e32da1d816d84f11a6fa5b7ea5e762/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/8a8d331945e32da1d816d84f11a6fa5b7ea5e762/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/8a8d331945e32da1d816d84f11a6fa5b7ea5e762/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f933c0ca83ee306dfd7dc49a71b13ae0a698f973/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f933c0ca83ee306dfd7dc49a71b13ae0a698f973/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f933c0ca83ee306dfd7dc49a71b13ae0a698f973/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -64,10 +64,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/8a8d331945e32da1d816d84f11a6fa5b7ea5e762/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/f933c0ca83ee306dfd7dc49a71b13ae0a698f973/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-hydrograds@8a8d331](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/8a8d331945e32da1d816d84f11a6fa5b7ea5e762)
-on November 29, 2022.
+from [uiceds/cee-492-term-project-fall-2022-hydrograds@f933c0c](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/f933c0ca83ee306dfd7dc49a71b13ae0a698f973)
+on December 2, 2022.
 </em></small>
 
 ## Authors
@@ -185,27 +185,40 @@ In regards to the meteorological variables, UVB (ultraviolet index) and air temp
 
 ![Correlation matrix for monthly values](images/monthly_cor.png){#fig:heatmap_m width=6in}
 
-In which refers to correlation values, two additional correlation matrices were produced. One for monthly average values and another for daily average values. As observed in the figures, correlation values of ozone with respect to other variables are generally lower compared to correlations values of hourly measurements. Thus, the hourly measurements will be use in further sections. 
+
 
 ## Predictive Modeling
 
-### Selection of neural network model
+Two additional correlation matrices were produced. One for monthly average values and another for daily average values. As observed in the figures @fig:heatmap, @fig:heatmap_d, @fig:heatmap_m, correlation values of ozone with respect to hourly and monthly values of nitrogen-containing compounds, NMHC and temperature are generally lower compared to correlations values of hourly measurements. Thus, the hourly measurements will be used for predictive modeling.
 
-Different configurations of neural networks where used: fully connected layers, here called NN for simplicity, convolutional neural networks (CNN), and long short-term memory (LSTM). 
+ The low values of the coefficient of determination (r2) between O3 and each of the other variables suggest non-linear relations. Considering the non-linearity of the relation between the predictand O3 and the potential predictors a neural network seems suitable to develop the predictive model. Three different types of neural networks will be tested along with different values of hyperparameters.  
 
-### Long short-term memory and convolutional neural networks
+### Predictive model 
 
-Convolutional neural networks (CNN) uses filters to extend the depth of the input volume. Compared with regular neural network, it indicates the relationship between  and better capture edge features of the network. One drawback of CNN is that it's gradients can explode or vanish which may restrict neural network performance. Long short-term memory use two path for long (cell state) and short memories (hidden state) to avoid exploding/vanishing gradient problem. LSTM has three gates that determined the output: forget gate determines which percentage of long-term memory is remembered using a Sigmoid function; input gate calculates the potential memory using a Tanh function as well as the percentage of potential memory to remember using the same approach with the forget gate; and output gate multiply a Tanh function with long term memory result to obtain the output. 
+Different configurations of neural networks were used, fully connected layers, hereafter called NN for simplicity and convolutional neural networks (CNN). Both neural networks were used to predict hourly concentrations of O_3 (predictand) using as predictors the most correlated variables found in the EDA. The variables use as predictors were hourly meassurements of: relative humidity (RH), ultraviolet radiation (UVB rays), NMHC, NOx, NO and NO2. 
+
+In the case of the NNs, different numbers of layers, neurons and activation functions were tested @fig:NN_RMSE. As seen in the figure, the lowest root mean square error achieved was 6.7 PPM using an 18 neuron 8 layer NN architecture with 1E6 epochs and a learning rate (η) of 1E-4. 
+
+Two CNN were also tested. A CNN with 8 fully connected layers of 18 neurons with Relu activation function and a second CNN with one convolution layer of 64 neurons and two fully connected layers with Relu activation function. The two CNNs were trained with 1E3 epochs and η = 1E-4. The corresponding RMSEs were 8.63 PPB and 6.26 PPB. All the error values were calculated using the testing data i.e. the 30% held out fraction of available observations. 
+
+For reference, the mean value of ozone concentration in the dataset was 25.0 PPB. Considering  the lowest RMSE measured in all the different NN and CNN model was 6.26 PPB, the level of error of the predictive model might be deemed unsatisfactory.  This motivated to test another neural network configuration: long-short term memory neural network. The latter is often used to model sequential data, thus instead of a predictive model a forecast model was developed.
 
 ![RMSE values for different hyperparameters and NN configurations](images/NN_RMSE.png){#fig:NN_RMSE=6in}
 
-Two convolutional neural network (CNN) were also tested. A first CNN had 8, fully connected layer with 18 neurons, Relu as activation function and a convolution window of size 5. The number of epochs used was 100 with η = 0.01. RMSE of CNN was 8.63 and mean average error (MAE) was 5.85, for reference the best preforming NN, hereafter called NN 8-L, had a RSME of 6.7 and a MAE of 4.64 for the training dataset. The second CNN had a one convolution layer of 64 neurons, two fully connected layers, Relu as activation function and a convolution window of size 2.  The number of epochs used was 1000 with a η = 0.0001. RMSE was 6.26. 
 
-The LSTM had one 32 neuron layer, a second 64 neuron layer followed by two dense layers of 8 and 1 neuron, activation function used was Relu. Also LSTM training was don with the measurements from the previous  5 hours to predict ozone concentration of the 6th hour. Also, not only the most correlated predictors were used but all of the predictors except for wind speed and wind direction. RMSE for LSTM on the training data was 1.76, clearly LSTM outperformed the other neural network configurations.
+### Forecast model
+
+Long short-term memory neural networks were use to forecast hourly concentrations of O_3 (predictand) using hourly measurements recorded on the previous 5 hours of different variables. The variables used were: relative humidity (RH), ultraviolet radiation (UVB rays), NMHC, NOx, NO and NO2 and ambient temperature. 
+
+#### Long short-term memory neural networks (LSTMs)
+
+In order to explain the utility of LSTMs a drawback of CNNs have to be discussed. Convolutional neural networks (CNN) use filters to extend the depth of the input volume. One drawback of CNN is that its gradients can explode or vanish which may restrict neural network performance. Long short-term memory use two path for long (cell state) and short memories (hidden state) to avoid the exploding/vanishing gradient problem. LSTM has three gates that determined the output: forget gate to determine the percentage of long-term memory that is remembered via a Sigmoid function; input gate to calculate both the potential memory using a Tanh function and the percentage of potential memory that is remembered; and a third gate, called the output gate, to multiply a Tanh function with the long term memory results to obtain the output. 
+
+The LSTM tested had one 32 neuron layer, a second 64 neuron layer followed by two dense layers of 8 and 1 neuron, and Relu as activation function. LSTM training was done with hourly measurements from the previous 5 hours to forecast ozone concentration of the 6th hour. RMSE for LSTM on the testing data was 1.76. 
 
 The following plots shows predicted O3 values with LSTM and observed O3 values
 
-![LSTM O3 predicte and observed values](images/LSTM_observed.png){#fig:LSTM_observed=4in}
+![LSTM O3 predicted and observed values](images/LSTM_observed.png){#fig:LSTM_observed=4in}
 
 ### Additional avenues of improvement
 

@@ -20,7 +20,7 @@ EDA
 GRU
 Guanyin
 Guting
-Heatmap
+heatmap
 heatmaps
 hyperparameters
 JadeJi

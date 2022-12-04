@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-12-02'
+date-meta: '2022-12-04'
 author-meta:
 - Jiewen Luo
 - Rourou Ji
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Forecasting and time variability analysis of Ozone concentrations using nitrate oxide and meteorological variables as predictors" />
   <meta property="og:title" content="Forecasting and time variability analysis of Ozone concentrations using nitrate oxide and meteorological variables as predictors" />
   <meta property="twitter:title" content="Forecasting and time variability analysis of Ozone concentrations using nitrate oxide and meteorological variables as predictors" />
-  <meta name="dc.date" content="2022-12-02" />
-  <meta name="citation_publication_date" content="2022-12-02" />
+  <meta name="dc.date" content="2022-12-04" />
+  <meta name="citation_publication_date" content="2022-12-04" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -40,9 +40,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/b5f34c534ceb630c6482c51f1cecfc3be5ec91bc/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/b5f34c534ceb630c6482c51f1cecfc3be5ec91bc/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/b5f34c534ceb630c6482c51f1cecfc3be5ec91bc/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/6a3265e98a2146498a29611d748cb21abedf8db3/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/6a3265e98a2146498a29611d748cb21abedf8db3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/6a3265e98a2146498a29611d748cb21abedf8db3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -64,10 +64,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/b5f34c534ceb630c6482c51f1cecfc3be5ec91bc/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/6a3265e98a2146498a29611d748cb21abedf8db3/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-hydrograds@b5f34c5](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/b5f34c534ceb630c6482c51f1cecfc3be5ec91bc)
-on December 2, 2022.
+from [uiceds/cee-492-term-project-fall-2022-hydrograds@6a3265e](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/6a3265e98a2146498a29611d748cb21abedf8db3)
+on December 4, 2022.
 </em></small>
 
 ## Authors
@@ -99,7 +99,7 @@ on December 2, 2022.
 
 
 ## Introduction
-The purpose of this project is to predict O~3~ concentrations using measurements of concentration of other pollutants and available meteorological measurements.  Ozone might be formed when heat and sunlight cause chemical reactions between oxides of nitrogen (NO~x~) and Volatile Organic Compounds (VOC), which are also known as Hydrocarbons. Therefore it could be hypothesized that using measurements of NO~x~ as an independent variable a model could be developed to predict O~3~ concentrations. Additionally, meteorological variables such as air temperature, relative humidity(RH) and ultraviolet index (UVB - UVI) could be included as independent variables to assess their influence on temporal variability of ozone. As an additional step wind-related variables such as mean wind velocity and direction will be included to study their effect on temporal variability of ozone, too.
+The purpose of this project is to predict O~3~ concentrations using measurements of concentration of other pollutants and available meteorological measurements.  Ozone might be formed when heat and sunlight cause chemical reactions between oxides of nitrogen (NO~x~) and Volatile Organic Compounds (VOC), which are also known as Hydrocarbons. Therefore it could be hypothesized that using measurements of NO~x~ as an independent variable a model could be developed to predict O~3~ concentrations. Additionally, meteorological variables such as air temperature, relative humidity(RH) and ultraviolet index (UVB - UVI) could be included as independent variables to assess their influence on temporal variability of ozone. 
 
 The dataset used in this project is a CSV file about the air quality in northern Taiwan collected in 2015 [https://www.kaggle.com/datasets/nelsonchu/air-quality-in-northern-taiwan], which includes air quality data and meteorological monitoring data for research and analysis, originally from Environmental Protection Administration, Executive Yuan, R.O.C. (Taiwan). There are 25 observation stations in total. Columns in this CSV file are the following:
 
@@ -166,11 +166,11 @@ Table 1: A table contain all stations in Taiwan.
 | Yangming | Yonghe | Zhongli | Zhongshan | Linkou |
 
 
-After the air quality data has been processed, the strongest O~3~ predictors will be determined by using a heatmap. The neural network and convolutional neural network are performed to predict hourly concentrations of O~3~. As additional criteria to identify the strongest predictors, a LSTM network (long short-term memory network) can be used since the data used is time dependent. Several LSTM layers and fully-connected layers are included in this method. Then the pollution concentrations and the weights assigned to each correlated criterion that indicate the strongest predictors could be investigated. Once the strongest predictors have been identified, genetic programming will be used to develop the models to predict O~3~ concentrations. 
+After the air quality data has been processed, the strongest O~3~ predictors will be determined by using a correlation matrix, along with other additional steps envolving the exploratory data analysis. Neural network and convolutional neural networks will be used to predict hourly concentrations of O~3~. As and additional predictive model to be tested a LSTM (long short-term memory) neural network will used since the data is time dependent. All this different neural network architectures will be evaluated in terms of error metrics to determine which on is the most suitable to predict O~3~ concentrations using the information available on the dataset.
 
 ## Exploratory Data Analysis
 
-In order to explore the relation between the dependent variable and independent variables several scatter plots were created between meteorological variables, pollutant concentrations and ozone concentrations. Additionally, a heatmap was generated to investigate the correlation values between ozone concentration and independent variables. The most correlated variables are RH(relative humidity) and UVB(Ultraviolet index). RH is negatively correlated with ozone,value of -0.51, while UVB is positively correlated, value of 0.51. Another relevant observation was that concentrations of nitrogen-related chemicals are highly correlated between each other, which is close to the truth. 
+In order to explore the relation between the dependent variable and independent variables several scatter plots were created between meteorological variables, pollutant concentrations and ozone concentrations. Additionally, a heatmap was generated to investigate the correlation values between ozone concentration and independent variables. The most correlated metereological variables are RH(relative humidity) and UVB(Ultraviolet index). RH is negatively correlated with ozone,value of -0.51, while UVB is positively correlated, value of 0.51. Another relevant observation was that concentrations of nitrogen-containing chemicals compounds are highly correlated between each other, and also are among the most correlated variables with respect to the predictand (ozone). 
 
 
 ![Correlation matrix for hourly values](images/heatmap.jpg)
@@ -229,48 +229,65 @@ Figure 7: Correlation Matrix for Daily Values
 
 Figure 8: Correlation Matrix for Monthly Values
 
-
-
 ## Predictive Modeling
 
-Two additional correlation matrices were produced. One for monthly average values and another for daily average values. As observed in all three heatmaps, correlation values of ozone with respect to hourly and monthly values of nitrogen-containing compounds, NMHC and temperature are generally lower compared to correlations values of hourly measurements. Thus, the hourly measurements will be used for predictive modeling.
+Two additional correlation matrices were produced in the previous section. One for monthly average values and another for daily average values. As observed in the figures @fig:heatmap, @fig:heatmap_d, @fig:heatmap_m, correlation values of ozone with respect to daily and monthly values of nitrogen-containing compounds, NMHC and temperature are generally lower for daily and monthly averages compared to correlations values of hourly measurements. Consequently, the hourly measurements will be used for predictive modeling. Further discussion regarding the relation between the potential predictors and the predictand O~3~ will be limited to hourly measurements only.
+Values of the coefficient of determination (r^2) between O~3~ and each of the other variables were generally bellow 0.5. This suggests a non-linear relation (most r^2 values). Given the non-linearity of the relation between the predictand O~3~ and the potential predictors favoring the use of a neural network over other models such as multiple linear regression models seemed reasonable. Three different types of neural networks were tested. Additionally, a classification three model was also examined, since as seen in further section, error values of the neural network models were relatively high. 
 
-The low values of the coefficient of determination (r2) between O3 and each of the other variables suggest non-linear relations. Considering the non-linearity of the relation between the predictand O3 and the potential predictors a neural network seems suitable to develop the predictive model. Three different types of neural networks will be tested along with different values of hyperparameters.  
+### Testing of different neural network models
 
-### Predictive model 
+Different configurations of neural networks were tested. Fully connected layer neural networks, hereafter called NN, convolutional neural networks (CNN) and long short-term memory neural networks (LSTM). 
 
-Different configurations of neural networks were used, fully connected layers, hereafter called NN for simplicity and convolutional neural networks (CNN). Both neural networks were used to predict hourly concentrations of O_3 (predictand) using as predictors the most correlated variables found in the EDA. The variables use as predictors were hourly meassurements of: relative humidity (RH), ultraviolet radiation (UVB rays), NMHC, NOx, NO and NO2. 
+In order to explain the utility of LSTMs a drawback of CNNs have to be discussed. Convolutional neural networks (CNN) use filters to extend the depth of the input volume. One drawback of CNN is that its gradients can explode or vanish which may restrict neural network performance. Long short-term memory use two path for long (cell state) and short memories (hidden state) to avoid the exploding/vanishing gradient problem. 
 
-In the case of the NNs, different numbers of layers, neurons and activation functions were tested. As seen in Table 3, the lowest root mean square error achieved was 6.7 PPM using an 18 neuron 8 layer NN architecture with 1E6 epochs and a learning rate (η) of 1E-4. 
+LSTM has three gates that determined the output: forget gate to determine the percentage of long-term memory that is remembered via a Sigmoid function; input gate to calculate both the potential memory using a Tanh function and the percentage of potential memory that is remembered; and a third gate, called the output gate, to multiply a Tanh function with the long-term memory results to obtain the output. 
 
-Two CNN were also tested. A CNN with 8 fully connected layers of 18 neurons with Relu activation function and a second CNN with one convolution layer of 64 neurons and two fully connected layers with Relu activation function. The two CNNs were trained with 1E3 epochs and η = 1E-4. The corresponding RMSEs were 8.63 PPB and 6.26 PPB. All the error values were calculated using the testing data i.e. the 30% held out fraction of available observations. 
+The NN, CNN and LSTM models were used to predict hourly concentrations of O~3~ (predictand or dependent variable) using as predictors the most correlated variables found in the EDA. The variables used as predictors (independent variables) were hourly measurements of: relative humidity (RH), ultraviolet radiation (UVB rays), NMHC, NOx, NO and NO2. In the case of LSTM ambient temperature was also used as dependent variable. 
 
-For reference, the mean value of ozone concentration in the dataset was 25.0 PPB. Considering  the lowest RMSE measured in all the different NN and CNN model was 6.26 PPB, the level of error of the predictive model might be deemed unsatisfactory.  This motivated to test another neural network configuration: long-short term memory neural network. The latter is often used to model sequential data, thus instead of a predictive model a forecast model was developed.
+Different combinations of hyperparameters were tested. Model predictive ability was measured using the root mean square error (RMSE) for training and testing data. The results of such tests are summarized in @fig:CNN_RMSE and @fig:NN_RMSE .A similar table detailing RMSE for different combinations of numbers of memory cells and hidden layers on LSTM was not produced since training time neared 3 hours, yet based on trial and error a configuration of 2 LSTM layers of 32 and 64 neurons and 2 dense layers was selected. Values of RMSE were computed both for training and testing data. For all the models, including neural networks and classification tree, a 0.7 fraction of the dataset was used for training and the remaining 0.3 was used for testing.
 
-Table 3: RMSE Values for Different Hyperparameters and NN Configurations
 ![RMSE values for different hyperparameters and NN configurations](images/NN_RMSE.png){#fig:NN_RMSE=6in}
+Table 3: RMSE values for different hyperparameters and NN configurations
 
+![RMSE values for different hyperparameters and CNN configurations](images/CNN_RMSE.png){#fig:CNN_RMSE=6in}
+Table 4: RMSE values for different hyperparameters and CNN configurations
 
-### Forecast model
+When looking at @fig:CNN_RMSE and @fig:NN_RMSE, in all cases (NN2, NN4 and CNN4 )the best performing activation function was rectified linear unit (ReLu) when compared to hyperbolic tangent. Therefore, ReLu was used as activation function for the rest of tests. In NN 4 the number epochs was increased by one order of magnitude since neural network outputted a significantly higher RMSE when using the original number epochs.
 
-Long short-term memory neural networks were use to forecast hourly concentrations of O_3 (predictand) using hourly measurements recorded on the previous 5 hours of different variables. The variables used were: relative humidity (RH), ultraviolet radiation (UVB rays), NMHC, NOx, NO and NO2 and ambient temperature. 
+Increasing the number of neurons did not decrease either RMSE in training or testing data (NN5 vs NN6) in the case the fully connected neural networks. When analyzing the CNNs, increasing the number of neurons from 12 to 18 (CNN 1 vs CNN 2) reduced testing and training RMSE. Yet when increasing to 36 neurons (CNN 2 vs CNN 3) both training and testing RMSE increased. It is necessary to mentioned that the learning rate was reduced for CNN 3 to prevent NaN outputs. For additional tests on CNNs, 18 neurons were used, since it seemed to be the configuration that yielded the best results on terms of RMSE. 
 
-#### Long short-term memory neural networks (LSTMs)
+Number of layers reduce both RMSE for training and testing both for NN. However, RMSE on training data dropped more significantly for training data than for testing data. This might indicate a tendency towards overfitting the training data using NN on this dataset. In the case of CNN, when increasing the number of convolutional layers ,RMSE increased marginally for training data and drop for testing data (CNN7 vs CNN8). When adding another convolutional layer (CNN8 vs CNN9) training RMSE dropped significantly (overfitting) and testing RMSE increased, suggesting poor generalization.
 
-In order to explain the utility of LSTMs a drawback of CNNs have to be discussed. Convolutional neural networks (CNN) use filters to extend the depth of the input volume. One drawback of CNN is that its gradients can explode or vanish which may restrict neural network performance. Long short-term memory use two path for long (cell state) and short memories (hidden state) to avoid the exploding/vanishing gradient problem. LSTM has three gates that determined the output: forget gate to determine the percentage of long-term memory that is remembered via a Sigmoid function; input gate to calculate both the potential memory using a Tanh function and the percentage of potential memory that is remembered; and a third gate, called the output gate, to multiply a Tanh function with the long term memory results to obtain the output. 
+To summarize the best performing neural networks in terms of RMSE for testing data were NN 8 and CNN 8. We chose to favor testing RMSE since it is a better metric of model to generalize learning, which is particularly important when using a model for prediction and regression since a predictive model should be able to render predictions based on data it has “not seen” rather than on the data it was trained. The effects of generalization and overfitting can be also observed in figures, @fig:EE_PO_LSTM, @fig:EE_PO_1CNN, @fig:EE_PO_2CNN, @fig:EE_PO_3CNN, @fig:EE_PO_8NN, @fig:ClassTree, where dispersion is clearer more pronounced on testing data rather than in the training data.
 
-The LSTM tested had one 32 neuron layer, a second 64 neuron layer followed by two dense layers of 8 and 1 neuron, and Relu as activation function. LSTM training was done with hourly measurements from the previous 5 hours to forecast ozone concentration of the 6th hour. RMSE for LSTM on the testing data was 1.76. The following plots shows predicted O3 values with LSTM and observed O3 values.
+![Error value versus epochs and observations versus prediction 2 Layer LSTM](images/ LSTM 2 Layer.png){#fig:EE_PO_LSTM=6in}
+Figure 9: Training and testing RMSE versus number of epochs and predictions versus observations (actual values) for LSTM
 
-![LSTM O3 predicted and observed values](images/LSTM_observed.png){#fig:LSTM_observed=4in}
+![Error value versus epochs and observations versus prediction 1 Layer CNN](images/CNN 1 Layer.png){#fig:EE_PO_1CNN=6in}
+Figure 10: Training and testing RMSE vs number of epochs and predictions versus observations for CNN 7 (1 layer CNN)
 
-Figure 9: Predicted and Observed Ozone Concentrations by LSTM Method
+![Error value versus epochs and observations versus prediction 2 Layers CNN](images/CNN 2 Layer.png){#fig:EE_PO_2CNN=6in}
+Figure 11: Training and testing RMSE vs number of epochs and predictions versus observations for CNN 8 (2 layer CNN)
 
+![Error value versus epochs and observations versus prediction 3 Layers CNN](images/CNN 3 Layer.png){#fig:EE_PO_3CNN=6in}
+Figure 12: Training and testing RMSE vs number of epochs and predictions versus observations for CNN 9 (3 layer CNN)
 
-### Additional avenues of improvement
+![Error value versus epochs and observations versus prediction 8 Layer NN](images/NN 8 Layer.png){#fig:EE_PO_8NN=6in}
+Figure 13: Training and testing RMSE vs number of epochs and predictions versus observations for NN 8 (8 layer NN)
 
-The current modeling effort might indicate that ozone concentrations might not be predicted with lower error values using the available dataset. Thus repurposing of the modeling effort towards a more error tolerant goal might be an alternative to yield further utility from the available dataset. For instance, the available dataset could be used for a binary classification model to predict if ozone levels are above or below 70 ppb. The aforementioned value is the threshold of the primary (public health) and secondary (public welfare) 8-hour ozone standards defined by the “2015 Revision to 2008 Ozone National Ambient Air Quality Standards (NAAQS) Related Documents” 
+![Observations versus prediction Classification Tree model](images/ClassificationTree.png){#fig:ClassTree=6in}
+Figure 14: Training and testing RMSE  and predictions versus observations for classification tree
 
-### Discussion
+Another important aspect is the effect of the number of training epochs on RMSE. In all the cases, @fig:EE_PO_8NN, @fig:EE_PO_1CNN, @fig:EE_PO_2CNN, @fig:EE_PO_3CNN, RMSE for the training data dropped with increased number of epochs. However, RMSE for testing data initially dropped from the epoch 1 to 300 and then increased for LSTM (@fig:EE_PO_LSTM) and CNN 2 and 3 (@fig:EE_PO_2CNN, @fig:EE_PO_3CNN) for additional training steps.  In the cases of CNN 1(@fig:EE_PO_1CNN) and NN 8 (@fig:EE_PO_8NN)RMSE for testing data continued to drop, but at a lower rate than RMSE for training data. Because of most of the cases either RMSE increased with increased number of epochs or RMSE reduction was modest in comparison to increased training time, number of epochs was limited to 2500 for NN 8, 300 for CNN 8 and 300 for LSTM. 
+In the case of the classification tree model, @fig:ClassTree,  RMSE is zero for the training data, where as RMSE for testing data is 9.9. This is by far the most extreme example of overfitting of all the models. 
+
+###Discussion
+
+The lowest RMSE measured in all the different neural network-based model was 7.7 PPB (CNN 8). For reference, the mean value of ozone concentration in the dataset was 25.0 PPB, thus the level of error of the predictive model might be deemed unsatisfactory. This motivated to test a classification tree model. RMSE for the classification tree was 9.7 PPB, which is greater than the lowest RMSE yielded by the neural network models. 
+
+The original goal of this project was to predict O3 using measurements of other compounds and meteorological variables. Since the error value of the model predictions are high compared to the values of the measured concentrations of O3 it can assumed that ozone concentrations can be predicted yet predictions will have a significant error value associated with them. Being these a related potential path for future work could be suggested.
+
+The model question could be refined from “can ozone concentrations be predicted using the available data” to “can the available dataset be used to predict when ozone concentrations will exceed 70 PPB?”. This value is the threshold of the primary (public health) and secondary (public welfare) 8-hour ozone standards defined by the “2015 Revision to 2008 Ozone National Ambient Air Quality Standards (NAAQS) Related Documents”. Thus, by refining the research question the modeling effort will transition from a regression / prediction model to a binary classification model which might be a more error tolerant goal. 
 
 
 

@@ -40,9 +40,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/031a31b18953edef7c86ef17d0b4112a9a00f263/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/031a31b18953edef7c86ef17d0b4112a9a00f263/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/031a31b18953edef7c86ef17d0b4112a9a00f263/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/dd34e12eec30cfbb4ce2181d3113f9674e065433/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/dd34e12eec30cfbb4ce2181d3113f9674e065433/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/dd34e12eec30cfbb4ce2181d3113f9674e065433/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -64,9 +64,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/031a31b18953edef7c86ef17d0b4112a9a00f263/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/dd34e12eec30cfbb4ce2181d3113f9674e065433/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-hydrograds@031a31b](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/031a31b18953edef7c86ef17d0b4112a9a00f263)
+from [uiceds/cee-492-term-project-fall-2022-hydrograds@dd34e12](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/dd34e12eec30cfbb4ce2181d3113f9674e065433)
 on December 4, 2022.
 </em></small>
 
@@ -94,7 +94,6 @@ on December 4, 2022.
   <small>
      Department of CEE, University of Illinois at Urbana&Champaign
   </small>
-
 
 
 
@@ -173,14 +172,14 @@ After the air quality data has been processed, the strongest O~3~ predictors wil
 
 In order to explore the relation between the dependent variable and independent variables several scatter plots were created between meteorological variables, pollutant concentrations and ozone concentrations. Additionally, a heatmap was generated to investigate the correlation values between ozone concentration and independent variables. The most correlated metereological variables are RH(relative humidity) and UVB(Ultraviolet index). RH is negatively correlated with ozone,value of -0.51, while UVB is positively correlated, value of 0.51. Another relevant observation was that concentrations of nitrogen-containing chemicals compounds are highly correlated between each other, and also are among the most correlated variables with respect to the predictand (ozone). 
 
-Furthermore, the fraction of available measurements, meaning the number of data points available divided by the number of hours in a year, was computed for all stations and all measured variables. This computation helped visualize the stations that missed the least data points as well as the variables whose values are recorded the most consistently through different stations. The station with the highest fraction of available measurements was Banquiao, as seen in the Figure 1. For this reason the remaining portion of this EDA was devoted to this station. Other relevant statistics from the Banquio air quality station are shown in the following Table 2. 
+Furthermore, the fraction of available measurements, meaning the number of data points available divided by the number of hours in a year, was computed for all stations and all measured variables. This computation helped visualize the stations that missed the least data points as well as the variables whose values are recorded the most consistently through different stations. The station with the highest fraction of available measurements was Banquiao, as seen in the Figure @fig:var. For this reason the remaining portion of this EDA was devoted to this station. Other relevant statistics from the Banquio air quality station are shown in the following Table. 
 
 ![Data availability of air quality stations](images/InformationDensity.jpg){#fig:var)_fig width=6in}
 
 ![Statistics of air quality and relevant meteorological variables from Banqiao station](images/Table_description.png){#fig:Banquiao_desc width=6in}
 
 
-As described in previous sections, the dataset consists of hourly observations of ozone (dependent variable) and several pollutant concentrations and meteorological measurements (independent variables). The first step of the EDA was to plot ozone against all of the independent variables to visualize if the data collapsed into any identifiable pattern, thus to later on use such a pattern to identify potential models. The measurements in an hourly time scale did not show any observable pattern between the dependent and independent variables as shown in Figure 3. To better understand the relations between the dependent variable and independent variables, the correlation matrixes were produced.
+As described in previous sections, the dataset consists of hourly observations of ozone (dependent variable) and several pollutant concentrations and meteorological measurements (independent variables). The first step of the EDA was to plot ozone against all of the independent variables to visualize if the data collapsed into any identifiable pattern, thus to later on use such a pattern to identify potential models. The measurements in an hourly time scale did not show any observable pattern between the dependent and independent variables as shown in Figure 3. To better understand the relation between the dependent variable and independent variables correlation matrixes were produced
 
 ![Scatter plots of hourly measurements of variables](images/O3_corr.png){#fig:scatter)_fig width=6in}
 

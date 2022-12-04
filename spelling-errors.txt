@@ -10,8 +10,7 @@ Champaign
 ClassTree
 CNNs
 COND
-convolutional
-Correlationships
+Convolutional
 CSV
 dataset
 Datong
@@ -25,6 +24,7 @@ Guanyin
 Guting
 heatmap
 hyperparameters
+indicanting
 JadeJi
 Ji
 Jiewen
@@ -34,6 +34,8 @@ Longtan
 LSTM
 LSTMs
 Luo
+matrixes
+Meteo
 metereological
 NAAQS
 NMHC
@@ -42,7 +44,6 @@ Noomi
 NOx
 overfitting
 Pingzhen
-Pollutions
 PPB
 predictand
 ReLu
@@ -53,7 +54,7 @@ Scikit
 Shilin
 Sigmoid
 Songshan
-Standarized
+standarized
 Tamsui
 Tanh
 Taoyuan

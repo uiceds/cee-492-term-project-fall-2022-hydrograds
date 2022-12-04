@@ -10,7 +10,7 @@ Champaign
 ClassTree
 CNNs
 COND
-Convolutional
+convolutional
 CSV
 dataset
 Datong
@@ -44,7 +44,7 @@ Noomi
 NOx
 overfitting
 Pingzhen
-PPB
+ppb
 predictand
 ReLu
 RMSE

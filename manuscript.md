@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-12-04'
+date-meta: '2022-12-05'
 author-meta:
 - Jiewen Luo
 - Rourou Ji
@@ -20,8 +20,8 @@ header-includes: |-
   <meta name="citation_title" content="Forecasting and time variability analysis of Ozone concentrations using nitrate oxide and meteorological variables as predictors" />
   <meta property="og:title" content="Forecasting and time variability analysis of Ozone concentrations using nitrate oxide and meteorological variables as predictors" />
   <meta property="twitter:title" content="Forecasting and time variability analysis of Ozone concentrations using nitrate oxide and meteorological variables as predictors" />
-  <meta name="dc.date" content="2022-12-04" />
-  <meta name="citation_publication_date" content="2022-12-04" />
+  <meta name="dc.date" content="2022-12-05" />
+  <meta name="citation_publication_date" content="2022-12-05" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -40,9 +40,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/" />
   <meta name="citation_pdf_url" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/8e031334b4a1326a5ff2bda9a67925ca3dfd5ce1/" />
-  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/8e031334b4a1326a5ff2bda9a67925ca3dfd5ce1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/8e031334b4a1326a5ff2bda9a67925ca3dfd5ce1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/c610689b7aae7e7b237676a140f2c21508e2607d/" />
+  <meta name="manubot_html_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/c610689b7aae7e7b237676a140f2c21508e2607d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/c610689b7aae7e7b237676a140f2c21508e2607d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -64,10 +64,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/8e031334b4a1326a5ff2bda9a67925ca3dfd5ce1/))
+([permalink](https://uiceds.github.io/cee-492-term-project-fall-2022-hydrograds/v/c610689b7aae7e7b237676a140f2c21508e2607d/))
 was automatically generated
-from [uiceds/cee-492-term-project-fall-2022-hydrograds@8e03133](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/8e031334b4a1326a5ff2bda9a67925ca3dfd5ce1)
-on December 4, 2022.
+from [uiceds/cee-492-term-project-fall-2022-hydrograds@c610689](https://github.com/uiceds/cee-492-term-project-fall-2022-hydrograds/tree/c610689b7aae7e7b237676a140f2c21508e2607d)
+on December 5, 2022.
 </em></small>
 
 ## Authors
@@ -98,64 +98,14 @@ on December 4, 2022.
 
 
 ## Introduction
-The purpose of this project is to predict O~3~ concentrations using measurements of concentration of other pollutants and available meteorological measurements.  Ozone might be formed when heat and sunlight cause chemical reactions between oxides of nitrogen (NO~x~) and Volatile Organic Compounds (VOC), which are also known as Hydrocarbons. Therefore it could be hypothesized that using measurements of NO~x~ as an independent variable a model could be developed to predict O~3~ concentrations. Additionally, meteorological variables such as air temperature, relative humidity(RH) and ultraviolet index (UVB - UVI) could be included as independent variables to assess their influence on temporal variability of ozone. 
+1. Dataset description:
 
-The dataset used in this project is a CSV file about the air quality in northern Taiwan collected in 2015 [https://www.kaggle.com/datasets/nelsonchu/air-quality-in-northern-taiwan], which includes air quality data and meteorological monitoring data for research and analysis, originally from Environmental Protection Administration, Executive Yuan, R.O.C. (Taiwan). There are 25 observation stations in total. Columns in this CSV file are the following:
+The dataset used in this project is a `CSV` file about the air quality in northern Taiwan collected in 2015 [https://www.kaggle.com/datasets/nelsonchu/air-quality-in-northern-taiwan], which include air quality data and meteorological monitoring data for research and analysis, originally from Environmental Protection Administration, Executive Yuan, R.O.C. (Taiwan). There are 25 observation stations in total. Columns in this CSV file are the following:
 
+1. Time - The first column is the observation time of 2015
 
-Time - The first column is the observation time of 2015
+2. Station - The second column is the station name, there are 25 observation stations, those stations are showing at the table @tbl:1.
 
-Station - The second column is the station name, there are 25 observation stations, those stations are showing at the Table 1 .
-
-Items - From the third column to the last one
-
-item - unit - description
-
-SO2 - ppb - Sulfur dioxide
-
-CO - ppm - Carbon monoxide
-
-O3 - ppb - ozone
-
-PM10 - μg/m^3 - Particulate matter
-
-PM2.5 - μg/m^3 - Particulate matter
-
-NOx - ppb- Nitrogen oxides
-
-NO - ppb - Nitric oxide
-
-NO2 - ppb - Nitrogen dioxide
-
-THC - ppm - Total Hydrocarbons
-
-NMHC - ppm - Non-Methane Hydrocarbon
-
-CH4 - ppm - Methane
-
-UVB - UVI - Ultraviolet index
-
-AMB_TEMP - Celsius - Ambient air temperature
-
-RAINFALL - mm
-
-RH - % - Relative humidity
-
-WIND_SPEED - m/sec - The average of the last ten minutes per hour
-
-WIND_DIREC - degrees - The average of the last ten minutes per hour
-
-WS_HR - m/sec - The average of an hour
-
-WD_HR - degrees - The average of an hour
-
-PH_RAIN - PH - Acid rain
-
-RAIN_COND - μS/cm - Conductivity of acid rain
-
-
-
-Table 1: A table contain all stations in Taiwan.
 
 |  |  | station |  |  |
 |:---:|:---:|:---:|:---:|:---:|
@@ -165,27 +115,58 @@ Table 1: A table contain all stations in Taiwan.
 | Wanhua | Wanli | Xindian | Xinzhuang | Xizhi |
 | Yangming | Yonghe | Zhongli | Zhongshan | Linkou |
 
+Table: A table contain all stations in Taiwan.
+{#tbl:1}
 
-After the air quality data has been processed, the strongest O~3~ predictors will be determined by using a correlation matrix, along with other additional steps envolving the exploratory data analysis. Neural network and convolutional neural networks will be used to predict hourly concentrations of O~3~. As and additional predictive model to be tested a LSTM (long short-term memory) neural network will used since the data is time dependent. All this different neural network architectures will be evaluated in terms of error metrics to determine which on is the most suitable to predict O~3~ concentrations using the information available on the dataset.
+3. Items - From the third column to the last one
+
+4. item - `unit` - description
+- SO~2~ - `ppb` - Sulfur dioxide
+- CO - `ppm` - Carbon monoxide
+- O~3~ - `ppb` - ozone
+- PM~10~ - `μg/m^3` - Particulate matter
+- PM~2.5~ - `μg/m^3` - Particulate matter
+- NO~x~ - `ppb`- Nitrogen oxides
+- NO - `ppb` - Nitric oxide
+- NO~2~ - `ppb` - Nitrogen dioxide
+- THC - `ppm` - Total Hydrocarbons
+- NMHC - `ppm` - Non-Methane Hydrocarbon
+- CH4 - `ppm` - Methane
+- UVB - `UVI` - Ultraviolet index
+- AMB_TEMP - `Celsius` - Ambient air temperature
+- RAINFALL - `mm`
+- RH - `%` - Relative humidity
+- WIND_SPEED - `m/sec` - The average of the last ten minutes per hour
+- WIND_DIREC - `degrees` - The average of the last ten minutes per hour
+- WS_HR - `m/sec` - The average of an hour
+- WD_HR - `degrees` - The average of an hour
+- PH_RAIN - `PH` - Acid rain
+- RAIN_COND - `μS/cm` - Conductivity of acid rain
+
+## Proposal:
+The purpose of this project is to predict O~3~ concentrations using measurements of concentration of other pollutants and available meteorological measurements.  Ozone might be formed when heat and sunlight cause chemical reactions between oxides of nitrogen (NO~x~) and Volatile Organic Compounds (VOC), which are also known as Hydrocarbons. Therefore it could be hypothesized that using measurements of NO~x~ as an independent variable a model could be developed to predict O~3~ concentrations. Additionally, meteorological variables such as air temperature, relative humidity(RH) and ultraviolet index (UVB - UVI) could be included as independent variables to assess their influence on temporal variability of ozone. As an additional step wind-related variables such as mean wind velocity and direction will be included to study their effect on temporal variability of ozone.
+
+After the air quality data has been processed the strongest O~3~ predictors will be determined using PCA. PCA could be used to identify the main axes of variance within the dataset and explore underlying correlations that exist in a set of variables. Variables that are highly correlated cluster together. Using PCA 2D figures per each pair of variables are not needed, instead all the variables could be visualized simultaneously. Differences on PC1 are more important than differences on PC2. After plotting PCA plots, a heatmap could also be plotted to check the results. As additional criteria to identify the strongest predictors a LSTM network (long short-term memory network) can be used since the data used is time dependent. The network should contain several LSTM layers and fully-connected layers. The output should contain the pollution concentration and will point out the weights assigned to each correlated criterion, the values of such weights should also indicate what the strongest predictors are. Once the strongest predictors have been identified, genetic programming will be used to develop the models to predict O~3~ concentrations. 
+
 
 ## Exploratory Data Analysis
 
-In order to explore the relation between the dependent variable and independent variables several scatter plots were created between meteorological variables, pollutant concentrations and ozone concentrations. Additionally, a heatmap was generated to investigate the correlation values between ozone concentration and independent variables. The most correlated metereological variables are RH(relative humidity) and UVB(Ultraviolet index). RH is negatively correlated with ozone,value of -0.51, while UVB is positively correlated, value of 0.51. Another relevant observation was that concentrations of nitrogen-containing chemicals compounds are highly correlated between each other, and also are among the most correlated variables with respect to the predictand (ozone). 
+In order to explore the relation between the dependent variable and independent variables several scatter plots were created between meteorological variables, pollutant concentrations and ozone concentrations. Additionally, a heatmap was generated to investigate the correlation values between ozone concentration and independent variables. The most correlated metereological variables are RH(relative humidity) and UVB (Ultraviolet index). RH is negatively correlated with ozone,value of -0.51, while UVB is positively correlated, value of 0.51. Another relevant observation was that concentrations of nitrogen-containing chemicals compounds are highly correlated between each other, and also are among the most correlated variables with respect to the predict and (ozone). 
 
-Furthermore, the fraction of available measurements, meaning the number of data points available divided by the number of hours in a year, was computed for all stations and all measured variables. This computation helped visualize the stations that missed the least data points as well as the variables whose values are recorded the most consistently through different stations. The station with the highest fraction of available measurements was Banquiao, as seen in the Figure @fig:var. For this reason the remaining portion of this EDA was devoted to this station. Other relevant statistics from the Banquio air quality station are shown in the following Table. 
+Furthermore, the fraction of available measurements, meaning the number of data points available divided by the number of hours in a year, was computed for all stations and all measured variables. This computation helped visualize the stations that missed the least data points as well as the variables whose values are recorded the most consistently through different stations. The station with the highest fraction of available measurements was Banquiao, as seen in the Figure @fig:var. For this reason the remaining portion of this EDA was devoted to this station. Other relevant statistics from the Banquio air quality station are shown in the following Figure @fig:Banquiao_desc. 
 
-![Data availability of air quality stations](images/InformationDensity.jpg){#fig:var)_fig width=6in}
+![Data availability of air quality stations](images/InformationDensity.jpg){#fig:var fig width=6in}
 
 ![Statistics of air quality and relevant meteorological variables from Banqiao station](images/Table_description.png){#fig:Banquiao_desc width=6in}
 
 
-As described in previous sections, the dataset consists of hourly observations of ozone (dependent variable) and several pollutant concentrations and meteorological measurements (independent variables). The first step of the EDA was to plot ozone against all of the independent variables to visualize if the data collapsed into any identifiable pattern, thus to later on use such a pattern to identify potential models. The measurements in an hourly time scale did not show any observable pattern between the dependent and independent variables as shown in Figure 3. To better understand the relation between the dependent variable and independent variables correlation matrixes were produced
+As described in previous paragraph, the dataset consists of hourly observations of ozone (dependent variable) and several pollutant concentrations and meteorological measurements (independent variables). The first step of the EDA was to plot ozone against all of the independent variables to visualize if the data collapsed into any identifiable pattern, thus to later on use such a pattern to identify potential models. The measurements in an hourly time scale did not show any observable pattern between the dependent and independent variables as shown in Figure @fig:scatter. To better understand the relation between the dependent variable and independent variables correlation matrixes were produced
 
-![Scatter plots of hourly measurements of variables](images/O3_corr.png){#fig:scatter)_fig width=6in}
+![Scatter plots of hourly measurements of variables](images/O3_corr.png){#fig:scatter width=6in}
 
-Plotting the raw data, i.e. the available measurements without any processing or transformation, did not yield any insights that could help elucidate the relation between the variables. Therefore, the data was normalized. Notwithstanding,  normalization did not translate into plots where patterns could be identified. Thus, the data was processed again following two consecutive steps. First the values were averaged over a day and over a month producing a dataset of daily and monthly measurement. Second, monthly and daily values were standardized by dividing them by their corresponding daily and monthly averages. As seen on figure @fig:day, were daily standarized ozone concentrations are shown, and figures @fig:Pollutants  @fig:Meteo_Vars displaying standarized pollutant monthly concentrations and metereological variables measurements.
+Plotting the raw data, i.e. the available measurements without any processing or transformation, did not yield any insights that could help elucidate the relation between the variables. Therefore, the data was normalized. Notwithstanding,  normalization did not translate into plots where patterns could be identified. Thus, the data was processed again following two consecutive steps. First the values were averaged over a day and over a month producing a dataset of daily and monthly measurement. Second, monthly and daily values were standardized by dividing them by their corresponding daily and monthly averages. As seen on figure @fig:day, were daily standardized ozone concentrations are shown, and Figure @fig:Pollutants and Figure @fig:Meteo_Vars displaying standardized pollutant monthly concentrations and metereological variables measurements.
 
-The resulting daily and monthly standardized averages were plotted against time. Plotting the daily averaged variables shown plots were the fluctuations of the values happened in a relatively short time and thus such fluctuations obscured any pattern that could be observed in the data. These was prevalent for all variables, here we show only standarized daily ozone concentrations @fig:day. Conversely, when the monthly standardized averages were plotted against time it was visible that the pollutants concentrations shown similar time patterns as seen in Figure 5.
+The resulting daily and monthly standardized averages were plotted against time. Plotting the daily averaged variables shown plots were the fluctuations of the values happened in a relatively short time and thus such fluctuations obscured any pattern that could be observed in the data. These was prevalent for all variables, here we show only standardized daily ozone concentrations as Figure @fig:day. Conversely, when the monthly standardized averages were plotted against time it was visible that the pollutants concentrations shown similar time patterns as seen in Figure @fig:Pollutants.
 
 ![Daily concentrations of ozone](images/day.jpg){#fig:day width=6in}
 
@@ -193,15 +174,16 @@ The resulting daily and monthly standardized averages were plotted against time.
 
 ![Standardized meteorological measurements and standardized ozone monthly concentration changes](images/Meteo_Vars.jpg){#fig:Meteo_Vars width=6in}
 
-In regards to pollutant concentrations, O~3~ peaked in the months when concentration of the nitrogen based pollutants and non-methane hydrocarbons dropped. This is especially the case for NO concentrations (green line). This pattern of corresponding decreasing pollutant concentrations and increasing ozone could suggest that the pollutant concentrations are negatively correlated with ozone concentrations. This is also consistent with figure @fig:heatmap_h (correlation plot). As shown in the figure correlation values for the nitrogen species are negative, indicanting negative correlation, and vary from -0.41 to -0.5. 
+In regards to pollutant concentrations, O~3~ peaked in the months when concentration of the nitrogen based pollutants and non-methane hydrocarbons dropped. This is especially the case for NO concentrations (green line). This pattern of corresponding decreasing pollutant concentrations and increasing ozone could suggest that the pollutant concentrations are negatively correlated with ozone concentrations. This is also consistent with figure @fig:heatmap_h (correlation plot). As shown in the figure correlation values for the nitrogen species are negative, indicating negative correlation, and vary from -0.41 to -0.5. 
 
 In regards to the meteorological variables, UVB (ultraviolet index) and air temperature peak in the same months. Both temperature and UVB experience an increase in their values from the beginning of the year peaking in June. After June, both values experience a steady decrease. In the case of UVB a positive correlation of 0.51 can be observed in @fig:heatmap_h.
 
-![Correlation matrix for hourly values](images/heatmap.jpg){#fig:heatmap_h)_fig width=6in}
+![Correlation matrix for hourly values](images/heatmap.jpg){#fig:heatmap_h width=6in}
 
 ![Correlation matrix for daily values](images/daily_cor.png){#fig:heatmap_d width=6in}
 
 ![Correlation matrix for monthly values](images/monthly_cor.png){#fig:heatmap_m width=6in}
+
 
 
 ## Predictive Modeling
@@ -219,36 +201,36 @@ In order to explain the utility of LSTMs a drawback of CNNs have to be discussed
 
 LSTM has three gates that determined the output: forget gate to determine the percentage of long-term memory that is remembered via a Sigmoid function; input gate to calculate both the potential memory using a Tanh function and the percentage of potential memory that is remembered; and a third gate, called the output gate, to multiply a Tanh function with the long-term memory results to obtain the output. 
 
-The NN, CNN and LSTM models were used to predict hourly concentrations of O~3~ (predictand or dependent variable) using as predictors the most correlated variables found in the EDA. The variables used as predictors (independent variables) were hourly measurements of: relative humidity (RH), ultraviolet radiation (UVB rays), NMHC, NOx, NO and NO2. In the case of LSTM ambient temperature was also used as dependent variable. 
+The NN, CNN and LSTM models were used to predict hourly concentrations of O~3~ (predict or dependent variable) using as predictors the most correlated variables found in the EDA. The variables used as predictors (independent variables) were hourly measurements of: relative humidity (RH), ultraviolet radiation (UVB rays), NMHC, NOx, NO and NO2. In the case of LSTM ambient temperature was also used as dependent variable. 
 
 ![RMSE values for different hyperparameters and NN configurations](images/NN_RMSE.png){#fig:NN_RMSE}
 
 ![RMSE values for different hyperparameters and CNN configurations](images/CNN_RMSE.png){#fig:CNN_RMSE}
 
-Different combinations of hyperparameters were tested. Model predictive ability was measured using the root mean square error (RMSE) for training and testing data. The results of such tests are summarized in @fig:CNN_RMSE and @fig:NN_RMSE .A similar table detailing RMSE for different combinations of numbers of memory cells and hidden layers on LSTM was not produced since training time neared 3 hours, yet based on trial and error a configuration of 2 LSTM layers of 32 and 64 neurons and 2 dense layers was selected. Values of RMSE were computed both for training and testing data. For all the models, including neural networks and classification tree, a 0.7 fraction of the dataset was used for training and the remaining 0.3 was used for testing.
+Different combinations of hyperparameters were tested. Model predictive ability was measured using the root mean square error (RMSE) for training and testing data. The results of such tests are summarized in Figure @fig:CNN_RMSE and Figure @fig:NN_RMSE. A similar table detailing RMSE for different combinations of numbers of memory cells and hidden layers on LSTM was not produced since training time neared 3 hours, yet based on trial and error a configuration of 2 LSTM layers of 32 and 64 neurons and 2 dense layers was selected. Values of RMSE were computed both for training and testing data. For all the models, including neural networks and classification tree, a 0.7 fraction of the dataset was used for training and the remaining 0.3 was used for testing.
 
 
-When looking at @fig:CNN_RMSE and @fig:NN_RMSE, in all cases (NN2, NN4 and CNN4 )the best performing activation function was rectified linear unit (ReLu) when compared to hyperbolic tangent. Therefore, ReLu was used as activation function for the rest of tests. In NN 4 the number epochs was increased by one order of magnitude since neural network outputted a significantly higher RMSE when using the original number epochs.
+When looking at Figure @fig:CNN_RMSE and Figure @fig:NN_RMSE, in all cases (NN2, NN4 and CNN4) the best performing activation function was rectified linear unit (ReLu) when compared to hyperbolic tangent. Therefore, ReLu was used as activation function for the rest of tests. In NN 4 the number epochs was increased by one order of magnitude since neural network outputted a significantly higher RMSE when using the original number epochs.
 
 Increasing the number of neurons did not decrease either RMSE in training or testing data (NN5 vs NN6) in the case the fully connected neural networks. When analyzing the CNNs, increasing the number of neurons from 12 to 18 (CNN 1 vs CNN 2) reduced testing and training RMSE. Yet when increasing to 36 neurons (CNN 2 vs CNN 3) both training and testing RMSE increased. It is necessary to mentioned that the learning rate was reduced for CNN 3 to prevent NaN outputs. For additional tests on CNNs, 18 neurons were used, since it seemed to be the configuration that yielded the best results on terms of RMSE. 
 
 Number of layers reduce both RMSE for training and testing both for NN. However, RMSE on training data dropped more significantly for training data than for testing data. This might indicate a tendency towards overfitting the training data using NN on this dataset. In the case of CNN, when increasing the number of convolutional layers ,RMSE increased marginally for training data and drop for testing data (CNN7 vs CNN8). When adding another convolutional layer (CNN8 vs CNN9) training RMSE dropped significantly (overfitting) and testing RMSE increased, suggesting poor generalization. Additional figures, shown bellow, showing the influence of number epochs used in training on RMSE were created.  
 
 
-![Training and testing RMSE versus number of epochs and predictions versus observations (actual values) for LSTM](images/LSTM 2 Layer.png){#fig:EE_PO_LSTM width=5in}
+![Training and testing RMSE versus number of epochs and predictions versus observations (actual values) for LSTM](images/LSTM 2 Layer.png){#fig:EE_PO_LSTM width=7in}
 
-![Training and testing RMSE vs number of epochs and predictions versus observations for CNN 7 (1 layer CNN)](images/CNN 1 Layer.png){#fig:EE_PO_1CNN width=5in}
+![Training and testing RMSE vs number of epochs and predictions versus observations for CNN 7 (1 layer CNN)](images/CNN 1 Layer.png){#fig:EE_PO_1CNN width=7in}
 
-![Training and testing RMSE vs number of epochs and predictions versus observations for CNN 8 (2 layer CNN)](images/CNN 2 Layer.png){#fig:EE_PO_2CNN width=5in}
+![Training and testing RMSE vs number of epochs and predictions versus observations for CNN 8 (2 layer CNN)](images/CNN 2 Layer.png){#fig:EE_PO_2CNN width=7in}
 
-![Training and testing RMSE vs number of epochs and predictions versus observations for CNN 9 (3 layer CNN)](images/CNN 3 Layer.png){#fig:EE_PO_3CNN width=5in}
+![Training and testing RMSE vs number of epochs and predictions versus observations for CNN 9 (3 layer CNN)](images/CNN 3 Layer.png){#fig:EE_PO_3CNN width=7in}
 
-![Training and testing RMSE vs number of epochs and predictions versus observations for NN 8 (8 layer NN)](images/NN 8 Layer.png){#fig:EE_PO_8NN width=5in}
+![Training and testing RMSE vs number of epochs and predictions versus observations for NN 8 (8 layer NN)](images/NN 8 Layer.png){#fig:EE_PO_8NN width=7in}
 
 ![Training and testing RMSE  and predictions versus observations for classification tree](images/ClassificationTree.png){#fig:ClassTree width=6in}
 
-Another important aspect is the effect of the number of training epochs on RMSE. In all the cases, @fig:EE_PO_8NN, @fig:EE_PO_1CNN, @fig:EE_PO_2CNN, @fig:EE_PO_3CNN, RMSE for the training data dropped with increased number of epochs. However, RMSE for testing data initially dropped from the epoch 1 to 300 and then increased for LSTM (@fig:EE_PO_LSTM) and CNN 2 and 3 (@fig:EE_PO_2CNN, @fig:EE_PO_3CNN) for additional training steps.  In the cases of CNN 1(@fig:EE_PO_1CNN) and NN 8 (@fig:EE_PO_8NN)RMSE for testing data continued to drop, but at a lower rate than RMSE for training data. Because of most of the cases either RMSE increased with increased number of epochs or RMSE reduction was modest in comparison to increased training time, number of epochs was limited to 2500 for NN 8, 300 for CNN 8 and 300 for LSTM. 
-In the case of the classification tree model, @fig:ClassTree,  RMSE is zero for the training data, where as RMSE for testing data is 9.9. This is by far the most extreme example of overfitting of all the models. 
+Another important aspect is the effect of the number of training epochs on RMSE. In all the cases, Figure @fig:EE_PO_8NN, Figure @fig:EE_PO_1CNN, Figure @fig:EE_PO_2CNN, Figure @fig:EE_PO_3CNN, RMSE for the training data dropped with increased number of epochs. However, RMSE for testing data initially dropped from the epoch 1 to 300 and then increased for LSTM (Figure @fig:EE_PO_LSTM) and CNN 2 and 3 (Figure @fig:EE_PO_2CNN, Figure @fig:EE_PO_3CNN) for additional training steps.  In the cases of CNN 1(Figure @fig:EE_PO_1CNN) and NN 8 (Figure @fig:EE_PO_8NN)RMSE for testing data continued to drop, but at a lower rate than RMSE for training data. Because of most of the cases either RMSE increased with increased number of epochs or RMSE reduction was modest in comparison to increased training time, number of epochs was limited to 2500 for NN 8, 300 for CNN 8 and 300 for LSTM. 
+In the case of the classification tree model, Figure @fig:ClassTree,  RMSE is zero for the training data, where as RMSE for testing data is 9.9. This is by far the most extreme example of over-fitting of all the models. 
 
 ## Discussion
 

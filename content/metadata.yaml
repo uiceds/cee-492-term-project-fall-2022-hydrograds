@@ -1,26 +1,29 @@
 ---
-title: "Manuscript Title"
+title: "Forecasting And Time Variability Analysis Of Ozone Concentrations Using Nitrogen Oxide And Meteorological Variables As Predictors"
+
 keywords:
   - markdown
   - publishing
   - manubot
 lang: en-US
 authors:
-  - github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
+  - github: Noomi-Luo
+    name:  Jiewen Luo
+    initials: JL
+    email: jiewenl2@illinois.edu
     affiliations:
-      - Department of Something, University of Whatever
-    funders:
-      - Grant XXXXXXXX
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
+      - Department of CEE, University of Illinois at Urbana&Champaign
+    
+  - github: JadeJi
+    name: Rourou Ji
+    initials: RJ
+    email: rourouj2@illinois.edu
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - Department of CEE, University of Illinois at Urbana&Champaign
+
+  - github: BernieJBA
+    name: Bernardo Burbano
+    initials: BB
+    email: bjb7@illinois.edu
+    affiliations:
+      - Department of CEE, University of Illinois at Urbana&Champaign
